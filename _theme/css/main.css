@@ -20,6 +20,10 @@ h1{
     font-weight: 900; 
 }
 
+a {
+    color:#161615
+}
+
 ._container{
     width:1440px;
     margin: 0 auto;
@@ -40,3 +44,144 @@ h1{
 .blue_color {
     color: #214578;
 }
+
+.d_flex{
+    display: flex;
+}
+
+.f_col{
+    flex-direction: column;
+}
+
+@media (max-width: 1440px) { 
+    ._container{ 
+        width:98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+.navi_btn {
+    display: flex;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 10000;
+    
+}
+
+.nav_btn {
+    width:45px;
+    height:45px;
+    background-color: white;
+    background-image: url(../img/icons/arrow.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 45px;
+}
+
+.nav_btn_next {
+    transform: rotate(90deg);
+}
+
+.nav_btn_prev {
+    transform: rotate(-90deg);
+}
+
+
+/* Шапка сайта */
+
+header {
+    max-height: 91px;
+    margin: 10px 0;
+}
+
+header ._container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 137px;
+}
+
+header .city_time *{
+    margin: auto auto auto 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+header .city_time .time_work{
+    margin-top: 0;
+} 
+
+header .city_time .city_select{ 
+    padding-right: 20px;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+header .city_time .city_select:before{
+    content: "";
+    position: absolute;
+    width:11px;
+    height: 17px;
+    background-image: url(../img/icons/map_pin.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:0;
+    top:calc(50% - 8px)
+}
+
+header .city_time .city_select:after{
+    content: "";
+    position: absolute;
+    width:15px;
+    height: 7px;
+    background-image: url(../img/icons/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right:0;
+    top:calc(50% - 3px)
+}
+
+
+header .city_time .time_work:before{ 
+    content: "";
+    position: absolute;
+    width:13px;
+    height: 13px;
+    background-image: url(../img/icons/time.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:0;
+    top:calc(50% - 6px);
+}
+
+header .phone {
+    margin: auto 10px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+header .menu li{
+    display: flex;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+    color:#214578;
+}
+
+header .menu a{
+    margin: auto 0 auto 10px;
+    text-decoration:  none;
+}
+
+/* Шапка сайта end */

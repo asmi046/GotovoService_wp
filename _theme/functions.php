@@ -18,13 +18,16 @@ function my_assets()
 	$scrypt_version = "1.0.1";
 
 	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $style_version, 'all'); 
+	wp_enqueue_style("swiper-css", get_template_directory_uri() . "/css/swiper-bundle.min.css", array(), null, 'all'); 
 	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $style_version, 'all');
 
 	// Подключение скриптов
 
-	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
+	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), $scrypt_version, true);
+	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $scrypt_version, true);
+	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
 
 
 	wp_localize_script('main', 'allAjax', array(
