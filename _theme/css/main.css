@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Lato";
+    color:#161615;
+}
+
+h1{
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.h2 {
+    font-size: 46px;
+    font-weight: 900; 
+}
+
+.h2 {
+    font-size: 30px;
+    font-weight: 900; 
+}
+
+._container{
+    width:1440px;
+    margin: 0 auto;
+}
+
+.gray_bg {
+    background-color: #e8e8e8;
+}
+
+.blue_bg {
+    background-color: #214578;
+}
+
+.gray_color {
+    color: #e8e8e8;
+}
+
+.blue_color {
+    color: #214578;
+}
