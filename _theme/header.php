@@ -9,9 +9,9 @@
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon64.png" sizes="64x64">
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/fav.svg" sizes="any">
+    <link rel="icon" type="image/svg" href="<?php echo get_template_directory_uri();?>/img/favicons/fav.svg" sizes="any">
 
-    <title><?php wp_title(); ?></title>
+    <title><?php echo wp_get_document_title(); ?></title>
 
     <?php wp_head();?>
 </head>
