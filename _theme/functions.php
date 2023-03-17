@@ -28,6 +28,7 @@ function my_assets()
 
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), $scrypt_version, true);
 	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $scrypt_version, true);
+	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), null, true);
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
 
 
