@@ -1,15 +1,15 @@
 <footer>
     <div class="_container blue_bg">
-        <div class="navigation_footer">
+        <div class="navigation_footer d_flex">
             <span class="icon_footer"></span>
-            <a href="#" class="nav_footer .block">FAQO</a>
-            <a href="#" class="nav_footer .block">Обучение</a>
-            <a href="#" class="nav_footer .block">Компании</a>
-            <a href="#" class="nav_footer .block">Клиентам</a>
-            <a href="#" class="nav_footer .block">Неисправности</a>
-            <a href="#" class="nav_footer .block">Контакты</a>
+            <a href="#" class="nav_footer _block">FAQO</a>
+            <a href="#" class="nav_footer _block">Обучение</a>
+            <a href="#" class="nav_footer _block">Компании</a>
+            <a href="#" class="nav_footer _block">Клиентам</a>
+            <a href="#" class="nav_footer _block">Неисправности</a>
+            <a href="#" class="nav_footer _block">Контакты</a>
         </div>
-        <section class="general_info">
+        <section class="general_info d_flex">
             <div class="sqp">
                 <h3>Услуги</h3>
                 <ul>
@@ -48,6 +48,7 @@
             </div>
         </section>
 <!--И тут либо <hr> либо div со стилем background-color:blue и height: 3-4px с border-radius -->
-   <p>Вся предоставленная на сайте информация, касающаяся сроков, стоимости и порядка предоставления услуг, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.</p>     
+<div class="hr"></div>
+   <p class="offer_footer">Вся предоставленная на сайте информация, касающаяся сроков, стоимости и порядка предоставления услуг, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.</p>     
     </div>
 </footer>

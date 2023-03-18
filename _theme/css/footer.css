@@ -1,0 +1,46 @@
+footer, footer a {
+color: white;
+}
+
+.navigation_footer {
+padding-top: 20px;
+justify-content: center;
+}
+._block {
+display: block;
+}
+.nav_footer {
+font-size: 18px;
+margin: 10px;
+padding: 5px;
+text-decoration: none;
+
+}
+.general_info {
+margin: 10px 20px;
+}
+.sqp {
+margin: 0 auto;
+}
+.sqp a {
+display: block;
+text-decoration: none;
+}
+.sqp ul{
+list-style: none;
+padding-left: 0;
+}
+.sqp ul li {
+margin: 5px 0;
+padding: 2px 0;
+}
+.hr {
+height:3px;
+background-color:rgb(49, 68, 179);
+width: 1400px;
+margin: 20px auto;
+}
+.offer_footer {
+width: 1400px;
+margin: 10px auto;
+}
