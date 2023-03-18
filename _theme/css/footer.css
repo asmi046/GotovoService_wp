@@ -3,52 +3,36 @@ footer {
     background-color: rgb(12, 18, 28);
 }
 
+footer .menu a {
+    margin: auto 0 0 10px;
+}
+
 footer, footer a {
     color: white;
 }
 
 .navigation_footer {
-    justify-content: center;
-    align-items: flex-start;
+    margin-bottom: 48px;
 }
-.logo_footer {
-margin-top: -2px;
-}
-._block {
-display: block;
-}
-.nav_footer {
-font-size: 18px;
-margin: 10px;
-padding: 5px;
-text-decoration: none;
 
+.logo_footer {
+    margin-right: 120px;
 }
-.general_info {
-margin: 10px 20px;
-}
-.sqp {
-margin: 0 auto;
-}
-.sqp a {
-display: block;
-text-decoration: none;
-}
+
 .sqp ul{
-list-style: none;
-padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 .sqp ul li {
-margin: 5px 0;
-padding: 2px 0;
+    margin: 5px 0;
+    padding: 2px 0;
 }
+
 .hr {
-height:3px;
-border-top: 1px solid rgba(255, 255, 255, 0.2);
-width: 1400px;
-margin: 20px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
 }
+
 .offer_footer {
-width: 1400px;
-margin: 10px auto;
+    margin: 10px auto;
 }

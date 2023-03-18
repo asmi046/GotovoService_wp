@@ -7,13 +7,6 @@
                 <span class="time_work">8-23</span>
             </div>
             <a href="" class="phone">8 800 488 22 22</a>
-            <ul class="menu d_flex">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Обучение</a></li>          
-                <li><a href="#">Компании</a></li>          
-                <li><a href="#">Клиентам</a></li>
-                <li><a href="#">Неисправности</a></li>      
-                <li><a href="#">Контакты</a></li>
-            </ul>
+            <?php get_template_part('template-parts/osn_menu');?>
         </div>
 </header>

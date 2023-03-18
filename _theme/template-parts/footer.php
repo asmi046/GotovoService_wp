@@ -1,16 +1,15 @@
-<section class="gray_bg">
 <footer>
     <div class="_container">
-        <div class="navigation_footer d_flex">
-            <img class="logo_footer" src="<?php echo get_template_directory_uri();?>/img/logo_white.svg" sizes="any" alt="Логотип подвал">
-            <a href="#" class="nav_footer _block">FAQO</a>
-            <a href="#" class="nav_footer _block">Обучение</a>
-            <a href="#" class="nav_footer _block">Компании</a>
-            <a href="#" class="nav_footer _block">Клиентам</a>
-            <a href="#" class="nav_footer _block">Неисправности</a>
-            <a href="#" class="nav_footer _block">Контакты</a>
+        <div class="navigation_footer d_flex f_wrap">
+            <div>
+                <img class="logo_footer" src="<?php echo get_template_directory_uri();?>/img/logo_white.svg" sizes="any" alt="Логотип подвал">
+            </div>
+            
+            
+                <?php get_template_part('template-parts/osn_menu');?>
+            
         </div>
-        <section class="general_info d_flex">
+        <div class="general_info d_flex jc_sb">
             <div class="sqp">
                 <h3>Услуги</h3>
                 <ul>
@@ -47,10 +46,9 @@
                 <a href="#">Политика персональных данных</a>
                 <p>* Некоторые виды работ могут быть выполнены подрядными организациями</p>
             </div>
-        </section>
+        </div>
 <!--И тут либо <hr> либо div со стилем background-color:blue и height: 3-4px с border-radius -->
 <div class="hr"></div>
    <p class="offer_footer">Вся предоставленная на сайте информация, касающаяся сроков, стоимости и порядка предоставления услуг, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.</p>     
     </div>
 </footer>
-</section>

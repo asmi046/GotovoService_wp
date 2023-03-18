@@ -105,6 +105,10 @@ section h2 {
     justify-content: space-between;
 }
 
+.f_wrap {
+    flex-wrap: wrap;
+}
+
 /* margin */
 
 .m_r_25 {
@@ -311,16 +315,16 @@ header .phone {
     font-weight: 900;
 }
 
-header .menu li{
+.menu li{
     display: flex;
 }
 
-header .menu a:hover{
+.menu a:hover{
     text-decoration: underline;
     color:#214578;
 }
 
-header .menu a{
+.menu a{
     margin: auto 0 auto 10px;
     text-decoration:  none;
 }
