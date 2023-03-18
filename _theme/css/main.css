@@ -45,6 +45,11 @@ section h2 {
     background-color: #e8e8e8;
 }
 
+.white_bg {
+    background-color: white;
+}
+
+
 .blue_bg {
     background-color: #214578;
 }
@@ -324,6 +329,14 @@ header .menu a{
 
 
 /* Баннер на главной */
+
+.bnr_menu {
+   z-index: 1000; 
+   height: 80px;
+   width:1440px;
+   top:30px;
+   left:calc((100% - 1440px) / 2);
+}
 
 .main_slide {
     position: relative;

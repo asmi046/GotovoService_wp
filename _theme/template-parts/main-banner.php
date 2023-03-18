@@ -1,4 +1,6 @@
-<section class="main_banner">
+<section class="main_banner pos_rel">
+        <?php get_template_part('template-parts/banner-menu');?>
+
         <div class="swiper main_slider">
                 <div class="swiper-wrapper">
                         <div class="swiper-slide main_slide">
