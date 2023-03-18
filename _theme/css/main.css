@@ -8,20 +8,32 @@ body {
 h1{
     font-size: 54px;
     font-weight: 900;
+    line-height: 1;
 }
 
 h2 {
     font-size: 46px;
-    font-weight: 900; 
+    font-weight: 900;
+    line-height: 1;
 }
 
 h3 {
     font-size: 30px;
-    font-weight: 900; 
+    font-weight: 900;
+    line-height: 1; 
 }
 
 a {
-    color:#161615
+    color:#161615;
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+section h2 {
+    margin: 0.7em 0;
 }
 
 ._container{
@@ -33,8 +45,21 @@ a {
     background-color: #e8e8e8;
 }
 
+.white_bg {
+    background-color: white;
+}
+
+
 .blue_bg {
     background-color: #214578;
+}
+
+.red_bg {
+    background-color: #DE213C;
+}
+
+.dgray_color {
+    color: #A3A3A3;
 }
 
 .gray_color {
@@ -45,12 +70,115 @@ a {
     color: #214578;
 }
 
+.red_color {
+    color: #DE213C;
+}
+
+.white_color {
+    color: white;
+}
+
+
+/* flex */
+
 .d_flex{
     display: flex;
 }
 
 .f_col{
     flex-direction: column;
+}
+
+.f_1 {
+    flex:1
+}
+
+.f_2 {
+    flex:2
+}
+
+.f_4 {
+    flex:4
+}
+
+.jc_sb {
+    justify-content: space-between;
+}
+
+/* margin */
+
+.m_r_25 {
+    margin-right: 25px;
+}
+
+.m_lr_25 {
+    margin: 0 25px;
+}
+
+.m_b_40 {
+    margin-bottom: 40px;
+}
+
+.m_r_70 {
+    margin-right: 70px;
+}
+
+.m_t_22 {
+    margin-top: 22px;
+}
+
+.m_t_a {
+    margin-top: auto;
+}
+
+/* padding */
+
+.pad_50_40{
+    padding: 50px 40px;
+}
+
+/* border */
+
+.brad_12 {
+    border-radius: 12px;
+}
+
+.border_lg {
+    border: 1px solid #D2D1D145;
+}
+
+/* position */
+
+.pos_rel {
+    position: relative;
+}
+
+.pos_abs {
+    position: absolute;
+}
+
+/* тени */
+
+.shadow {
+    -webkit-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
+-moz-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
+box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
+}
+
+/* элементы формы */
+
+input {
+    height: 47px;
+    border-radius: 7px;
+    outline:none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    -webkit-text-fill-color: #999 !important; /* цвет текста */
+    color: #999 !important; /* цвет текста */
 }
 
 @media (max-width: 1440px) { 
@@ -64,10 +192,13 @@ a {
 .navi_btn {
     display: flex;
     position: absolute;
-    left:0;
-    top:0;
+    left:calc((100% / 2) + 620px);
+    bottom:20px;
     z-index: 10000;
-    
+}
+
+.navi_btn .nav_btn:first-child { 
+    margin-right: 10px;
 }
 
 .nav_btn {
@@ -87,6 +218,16 @@ a {
 
 .nav_btn_prev {
     transform: rotate(-90deg);
+}
+
+.btn {
+    background-color: #DE213C;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 7px 35px;
+    border-radius: 7px;
+    display: inline-block;
 }
 
 
@@ -185,3 +326,114 @@ header .menu a{
 }
 
 /* Шапка сайта end */
+
+
+/* Баннер на главной */
+
+.bnr_menu {
+   z-index: 1000; 
+   height: 80px;
+   width:1440px;
+   top:30px;
+   left:calc((100% - 1440px) / 2);
+}
+
+.main_slide {
+    position: relative;
+}
+
+.muar {
+    background-color: #16161526;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 900;
+    left: 1px;
+    top: 1px;
+}
+
+.bnr_info {
+    position: absolute;
+    z-index: 1000;
+    top: 25%;
+    left:calc((100% - 1440px) / 2 );
+    color: white;
+    width:33%
+}
+
+.bnr_info ul{
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ak_h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Баннер на главной end */
+
+/* Услуги на главной */
+
+.usl_line {
+    width:100%;
+    justify-content: space-between;
+}
+
+.usl_blk {
+    padding: 50px 40px;
+    border-radius: 12px;  
+}
+
+.usl_blk h3{
+    text-transform: uppercase;
+}
+
+.usl_blk .price{
+    font-weight: 900;
+    font-size: 34px;
+    margin-top: auto;
+}
+
+.usl_blk ul{
+    padding-left: 0;
+    font-size: 22px;
+}
+
+.usl_line_top {
+    margin-bottom: 25px;
+}
+
+/* Услуги на главной end */
+
+/* Получите бесплатную консультацию */
+
+.free_consultation {
+    margin-top: 80px;
+}
+
+.free_consultation h2{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.free_consultation input:first-child {
+    margin-bottom: 20px;
+}
+
+/* Получите бесплатную консультацию end */
+
+/* отзывы */
+
+.main_reviews .rev_blk:last-child{
+    margin-right: 0;
+}
+
+.rev_blk .rew_stiker{
+    top:0;
+    right: 50px;
+}
+/* отзывы end */
