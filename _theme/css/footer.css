@@ -1,3 +1,6 @@
+.gray_bg {
+background-color:#6a6a6f;
+}
 footer, footer a {
 color: white;
 }
@@ -6,6 +9,9 @@ color: white;
 padding-top: 20px;
 justify-content: center;
 align-items: flex-start;
+}
+.logo_footer {
+margin-top: -2px;
 }
 ._block {
 display: block;

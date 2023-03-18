@@ -1,8 +1,8 @@
-<section class="blue_bg">
+<section class="gray_bg">
 <footer>
     <div class="_container">
         <div class="navigation_footer d_flex">
-            <img src="<?php echo get_template_directory_uri();?>/img/logo_white.svg" sizes="any" alt="Логотип подвал">
+            <img class="logo_footer" src="<?php echo get_template_directory_uri();?>/img/logo_white.svg" sizes="any" alt="Логотип подвал">
             <a href="#" class="nav_footer _block">FAQO</a>
             <a href="#" class="nav_footer _block">Обучение</a>
             <a href="#" class="nav_footer _block">Компании</a>
