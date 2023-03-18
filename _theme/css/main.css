@@ -25,6 +25,10 @@ a {
     color:#161615
 }
 
+section h2 {
+    margin: 0.7em 0;
+}
+
 ._container{
     width:1440px;
     margin: 0 auto;
@@ -54,12 +58,32 @@ a {
     color: #DE213C;
 }
 
+.white_color {
+    color: white;
+}
+
 .d_flex{
     display: flex;
 }
 
 .f_col{
     flex-direction: column;
+}
+
+.f_2 {
+    flex:2
+}
+
+.f_4 {
+    flex:4
+}
+
+.m_lr_25 {
+    margin: 0 25px;
+}
+
+.m_b_40 {
+    margin-bottom: 40px;
 }
 
 @media (max-width: 1440px) { 
@@ -248,3 +272,36 @@ header .menu a{
 }
 
 /* Баннер на главной end */
+
+/* Услуги на главной */
+
+.usl_line {
+    width:100%;
+    justify-content: space-between;
+}
+
+.usl_blk {
+    padding: 50px 40px;
+}
+
+.usl_blk h3{
+    text-transform: uppercase;
+}
+
+.usl_blk .price{
+    font-weight: 900;
+    font-size: 34px;
+    margin-top: auto;
+}
+
+.usl_blk ul{
+    padding-left: 0;
+    font-size: 22px;
+}
+
+.usl_line_top {
+    margin-bottom: 25px;
+}
+
+
+/* Услуги на главной end */
