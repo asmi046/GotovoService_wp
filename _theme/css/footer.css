@@ -1,8 +1,8 @@
-.gray_bg {
-background-color:#6a6a6f;
+footer {
+    background-color: rgb(12, 18, 28);
 }
 footer, footer a {
-color: white;
+    color: white;
 }
 
 .navigation_footer {
@@ -43,7 +43,7 @@ padding: 2px 0;
 }
 .hr {
 height:3px;
-background-color:rgb(49, 68, 179);
+border-top: 1px solid rgba(255, 255, 255, 0.2);
 width: 1400px;
 margin: 20px auto;
 }
