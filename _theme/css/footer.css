@@ -5,6 +5,7 @@ color: white;
 .navigation_footer {
 padding-top: 20px;
 justify-content: center;
+align-items: flex-start;
 }
 ._block {
 display: block;
