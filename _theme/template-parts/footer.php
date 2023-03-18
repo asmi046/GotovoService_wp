@@ -1,7 +1,8 @@
+<section class="blue_bg">
 <footer>
-    <div class="_container blue_bg">
+    <div class="_container">
         <div class="navigation_footer d_flex">
-            <span class="icon_footer"></span>
+            <img src="../img/logo_white.svg" alt="Логотип подвал">
             <a href="#" class="nav_footer _block">FAQO</a>
             <a href="#" class="nav_footer _block">Обучение</a>
             <a href="#" class="nav_footer _block">Компании</a>
@@ -52,3 +53,4 @@
    <p class="offer_footer">Вся предоставленная на сайте информация, касающаяся сроков, стоимости и порядка предоставления услуг, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.</p>     
     </div>
 </footer>
+</section>
