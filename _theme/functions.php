@@ -22,6 +22,7 @@ function my_assets()
 	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("footer-css", get_template_directory_uri() . "/css/footer.css", array(), $style_version, 'all');
+	wp_enqueue_style("questions-css", get_template_directory_uri() . "/css/questions.css", array(), $style_version, 'all');
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $style_version, 'all');
 
 	// Подключение скриптов
