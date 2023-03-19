@@ -7,7 +7,7 @@
 
         <div class="d_flex f_1 f_wrap">
             <div class="d_flex quality">
-                    <div>
+                    <div class="whyar-img">
                     <img src="<?php echo get_template_directory_uri();?>/img/icons/uverennost.svg" sizes="any"" alt="">
                     </div>
                 <div class="quality-text">
@@ -20,8 +20,8 @@
                 </div>
             </div>
             <div class="d_flex quality">
-                    <div>
-                    <img src="<?php echo get_template_directory_uri();?>/img/icons/mnogoobrazie.svg" sizes="any"" alt="">
+                    <div class="whyar-img">
+                    <img class="mgt_10" src="<?php echo get_template_directory_uri();?>/img/icons/mnogoobrazie.svg" sizes="any"" alt="">
                     </div>
                 <div class="quality-text">
                     <div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="d_flex quality">
-                    <div>
+                    <div class="whyar-img">
                     <img src="<?php echo get_template_directory_uri();?>/img/icons/razvitie.svg" sizes="any"" alt="">
                     </div>
                 <div class="quality-text">
@@ -46,8 +46,8 @@
                 </div>
             </div>
             <div class="d_flex quality">
-                    <div>
-                    <img src="<?php echo get_template_directory_uri();?>/img/icons/stabilnost.svg" sizes="any"" alt="">
+                    <div class="whyar-img">
+                    <img class="mgt_10" src="<?php echo get_template_directory_uri();?>/img/icons/stabilnost.svg" sizes="any"" alt="">
                     </div>
                 <div class="quality-text">
                     <div>
