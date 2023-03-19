@@ -1,0 +1,14 @@
+.free_question h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em
+}
+.free_question input:first-child {
+    margin-bottom: 20px;
+}
+/* Брал стиль на освновании input, убирал height */
+.textarea {
+    border-radius: 7px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
