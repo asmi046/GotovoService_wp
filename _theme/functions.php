@@ -14,8 +14,8 @@ function my_assets()
 
 	// Подключение стилей 
 
-	$style_version = "1.0.1";
-	$scrypt_version = "1.0.1";
+	$style_version = "1.0.11".rand(1,100);
+	$scrypt_version = "1.0.11".rand(1,100);
 
 	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("swiper-css", get_template_directory_uri() . "/css/swiper-bundle.min.css", array(), null, 'all'); 
@@ -26,11 +26,11 @@ function my_assets()
 
 	// Подключение скриптов
 
-	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), $scrypt_version, true);
+	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), null, true);
 	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $scrypt_version, true);
 	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), null, true);
-	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true);
-
+	
+	
 
 	wp_localize_script('main', 'allAjax', array(
 		'ajaxurl' => admin_url('admin-ajax.php'),

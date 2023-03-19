@@ -1,6 +1,6 @@
 <header id="vue_app" >
         <div class="_container">
-        <!-- <city-select page-mode="page"></city-select> -->
+            <city-select page-mode="page"></city-select>
             <a href="#" class="logo"></a>
             <div class="city_time d_flex f_col">
                 <a href="" class="city_select">Москва</a>
