@@ -9,7 +9,7 @@
     <?php get_template_part('template-parts/free-consultation');?>
     <?php get_template_part('template-parts/reviews-in-main');?>
     <?php get_template_part('template-parts/video-review-in-main');?>
-    <?php get_template_part('template-parts/why-ar');?>
+    <?php get_template_part('template-parts/why-are');?>
     <?php get_template_part('template-parts/education-in-main');?>
     <?php get_template_part('template-parts/cooperation-in-main');?>
     <?php get_template_part('template-parts/masters-in-main');?>
