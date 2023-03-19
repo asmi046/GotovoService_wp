@@ -3,18 +3,16 @@
         <div class="d_flex m_b_40">
         <div class="f_1">
                 <h2>Остались вопросы?</h2>
-                <p>Специалист<br>
-                с вами свяжется
-                </p>      
+                <p>Специалист<br> с вами свяжется</p>      
         </div>
             <div class="f_1">
                     <form action="#" class="d_flex">
-                        <div class="d_flex f_1 f_col m_r_70">
+                        <div class="d_flex f_1 f_col m_r_25">
                         <input type="text" name="name" placeholder="Имя*">
                         <input type="tel" name="phone" placeholder="+7 (___) ___-__-___">
                         </div>
-                        <div class="d_flex f_1 f_col m_r_70">
-                            <textarea class="textarea f_1" name="" placeholder="Вопрос"></textarea>
+                        <div class="d_flex f_1 f_col">
+                            <textarea class="f_1" name="" placeholder="Вопрос"></textarea>
                         </div>
                     </form>
             </div>

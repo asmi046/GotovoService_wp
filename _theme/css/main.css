@@ -165,8 +165,8 @@ section h2 {
 
 .shadow {
     -webkit-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
--moz-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
+    -moz-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
+    box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
 }
 
 /* элементы формы */
@@ -177,12 +177,21 @@ input {
     outline:none;
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
 }
 
 input:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
     -webkit-text-fill-color: #999 !important; /* цвет текста */
     color: #999 !important; /* цвет текста */
+}
+
+textarea {
+    border-radius: 7px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
 }
 
 @media (max-width: 1440px) { 

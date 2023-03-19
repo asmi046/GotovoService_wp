@@ -1,6 +1,7 @@
 <template id="city_select">
     
-    <a v-if="pageMode == 'head'" @click.prevent="openWin" href="#" class="location-block__link location-block__map_pin icon icon-ec_icon_map_pin_c">{{curentCity}}</a>
+    <!-- <a v-if="pageMode == 'head'" @click.prevent="openWin" href="#" class="location-block__link location-block__map_pin icon icon-ec_icon_map_pin_c">{{curentCity}}</a> -->
+    <a v-if="pageMode == 'head'" @click.prevent="openWin" href="#" class="city_select">{{curentCity}}</a>
     <div v-else>
         <div  class="select-prod-info__delivery-item">
             <p class="select-prod-info__delivery-item-text location-block__map_pin icon icon-ec_icon_map_pin_c">{{curentCity}}</p>
