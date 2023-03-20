@@ -32,4 +32,13 @@ row-gap: 20px;
      .main-cooperation ._container p {
         width: 136px;
      }
+
+    .number-line {
+        display: flex;
+    }
+
+     .number-line span {
+        margin-left: auto;
+        display: inline-block;
+    }
 }
