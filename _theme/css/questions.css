@@ -5,4 +5,20 @@
 .free_question input:first-child {
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 1024px) { 
+    .free_question ._container > div:first-child{
+        margin-bottom: 40px;
+    }
+
+    .free_question ._container > div:first-child br{
+        display: none;
+    }
+
+    .free_question ._container {
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* Брал стиль на освновании input, убирал height */

@@ -8,7 +8,7 @@ var swiper = new Swiper(".main_slider", {
 });
 
 var rew = new Swiper(".reviews_slider", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
   loop:true,
 
@@ -19,6 +19,10 @@ var rew = new Swiper(".reviews_slider", {
 
     1025: {
       slidesPerView: 3,
+    },
+
+    512: {
+      slidesPerView: 2,
     },
   },
 

@@ -99,5 +99,14 @@ header .phone {
     }
 }
 
+@media (max-width: 512px) { 
+    .city_time {
+        display: none;
+    }
+
+    header .phone{
+        font-size: 18px;
+    }
+}
 
 /* Шапка сайта end */

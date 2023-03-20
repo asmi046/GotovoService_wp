@@ -134,4 +134,20 @@
     }
 }
 
+@media (max-width: 768px) { 
+    .usl_blk .price {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 512px) { 
+   .ak_h1, .bnr_info h1 {
+        font-size:32px;
+    }
+
+    .bnr_info {
+        width: 96%;
+    }
+}
+
 /* Услуги на главной end */

@@ -1,6 +1,6 @@
 <section class="main-whyar">
-    <div class="_container blue_bg white_color brad_12 m_b_40 pad_50_40">
-        <div class="d_flex">
+    <div class="_container blue_bg white_color brad_12 m_b_40 pad_50_40 d_flex">
+        
         <div class="f_1">
             <h2>Почему<br>выбирают нас</h2>
         </div>
@@ -58,7 +58,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 </section>

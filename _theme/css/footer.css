@@ -36,3 +36,34 @@ footer, footer a {
 .offer_footer {
     margin: 10px auto;
 }
+
+@media (max-width: 1024px) {  
+    footer .general_info {
+        flex-wrap: wrap;
+    }
+
+    footer .general_info .sqp{ 
+        width:50%;
+        margin-bottom: 40px;
+    }
+
+    .logo_footer {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 512px) { 
+    footer ._container {
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    footer .menu {
+        display: none;
+    }
+
+    footer .general_info .sqp {
+        width: 100%;
+    }
+}
