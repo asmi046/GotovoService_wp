@@ -6,7 +6,7 @@
         </div>
         
         <div class="f_1">
-            <form class="d_flex" action="">
+            <form class="d_flex free_consult_form" action="">
                 <div class="d_flex f_1 f_col m_r_70">
                     <input type="text" placeholder="Имя" name="name" value="">
                     <input type="text" placeholder="Телефон*" name="phone" value="">

@@ -21,6 +21,9 @@ function my_assets()
 	wp_enqueue_style("swiper-css", get_template_directory_uri() . "/css/swiper-bundle.min.css", array(), null, 'all'); 
 	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $style_version, 'all'); 
+	wp_enqueue_style("site-header-css", get_template_directory_uri() . "/css/site-header.css", array(), $style_version, 'all'); 
+	wp_enqueue_style("main-banner-css", get_template_directory_uri() . "/css/main-banner.css", array(), $style_version, 'all'); 
+	wp_enqueue_style("services-css", get_template_directory_uri() . "/css/services.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("footer-css", get_template_directory_uri() . "/css/footer.css", array(), $style_version, 'all');
 	wp_enqueue_style("whyar-css", get_template_directory_uri() . "/css/whyare.css", array(), $style_version, 'all');
 	wp_enqueue_style("questions-css", get_template_directory_uri() . "/css/questions.css", array(), $style_version, 'all');
@@ -30,7 +33,7 @@ function my_assets()
 	// Подключение скриптов
 
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), null, true);
-	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $scrypt_version, true);
+	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), null, true);
 	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), null, true);
 	
 	

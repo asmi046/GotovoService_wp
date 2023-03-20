@@ -1,0 +1,103 @@
+/* Шапка сайта */
+
+header {
+    max-height: 91px;
+    margin: 10px 0;
+}
+
+header ._container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 137px;
+}
+
+header .city_time *{
+    margin: auto auto auto 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+header .city_time .time_work{
+    margin-top: 0;
+} 
+
+header .city_time .city_select{ 
+    padding-right: 20px;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+header .city_time .city_select:before{
+    content: "";
+    position: absolute;
+    width:11px;
+    height: 17px;
+    background-image: url(../img/icons/map_pin.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:0;
+    top:calc(50% - 8px)
+}
+
+header .city_time .city_select:after{
+    content: "";
+    position: absolute;
+    width:15px;
+    height: 7px;
+    background-image: url(../img/icons/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right:0;
+    top:calc(50% - 3px)
+}
+
+
+header .city_time .time_work:before{ 
+    content: "";
+    position: absolute;
+    width:13px;
+    height: 13px;
+    background-image: url(../img/icons/time.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:0;
+    top:calc(50% - 6px);
+}
+
+header .phone {
+    margin: auto 10px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.menu li{
+    display: flex;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    color:#214578;
+}
+
+.menu a{
+    margin: auto 0 auto 10px;
+    text-decoration:  none;
+}
+
+
+@media (max-width: 1024px) { 
+    header .menu{
+        display: none;
+    }
+}
+
+
+/* Шапка сайта end */

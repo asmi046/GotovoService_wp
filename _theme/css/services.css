@@ -1,0 +1,137 @@
+/* Услуги на главной */
+
+.usl_line {
+    width:100%;
+    justify-content: space-between;
+}
+
+.usl_blk {
+    padding: 50px 40px;
+    border-radius: 12px;  
+    overflow: hidden;
+}
+
+.usl_blk h3{
+    text-transform: uppercase;
+}
+
+.usl_blk .price{
+    font-weight: 900;
+    font-size: 34px;
+    margin-top: auto;
+}
+
+.usl_blk ul{
+    padding-left: 0;
+    font-size: 22px;
+}
+
+.usl_line_top {
+    margin-bottom: 25px;
+}
+
+.apple_services_img {
+    bottom: -1px;
+    right: 10px;
+     
+}
+.computer_services_img {
+    right: -10px;
+    bottom: 8%;
+}
+
+.bit_services_img {
+    right: -10px;
+    bottom: -5px;
+}
+
+.data_services_img {
+    right: 0;
+    bottom: -4px;
+}
+
+.org_services_img {
+    right: 0;
+    bottom: 0;
+}
+
+.nout_services_img {
+    right: 10px;
+    bottom: 0;
+}
+
+
+@media (max-width: 1330px) { 
+    .apple_services_img {
+        right: -3px; 
+    }
+    .computer_services_img {
+        width: 250px;
+        right: -20px;
+        bottom: 20px;
+    }
+    
+    .bit_services_img {
+        right: -25px;
+    }
+    
+    .data_services_img {
+        width:140px
+    }
+    
+    .org_services_img {
+        width:170px
+    }
+    
+    .nout_services_img {
+        bottom: -10px;
+    }
+
+}
+
+@media (max-width: 1280px) { 
+    
+    .nout_services_img {
+        bottom: -30px;
+    }
+
+}
+
+@media (max-width: 1024px) { 
+    .usl_line  {
+        flex-direction: column;
+    }
+    .usl_blk {
+        flex:1!important;
+        margin: 10px 0;
+    }
+    .usl_line_top {
+        margin-bottom: 0;
+    }
+
+    .apple_services_img {
+        right: 10px;
+        bottom: -50px; 
+    }
+
+    .bit_services_img {
+        right: 0;
+        bottom: -45px;
+    }
+
+    .data_services_img {
+        width: 180px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .org_services_img {
+        width: 188px;
+    }
+
+    .nout_services_img {
+        bottom: 0;
+    }
+}
+
+/* Услуги на главной end */

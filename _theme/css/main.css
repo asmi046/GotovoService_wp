@@ -194,12 +194,17 @@ textarea {
     width: 100%;
 }
 
-@media (max-width: 1440px) { 
+@media (max-width: 1600px) { 
     ._container{ 
         width:98%;
         margin-left: 1%;
         margin-right: 1%;
     }
+}
+.nb_wrapper {
+    display: flex;
+    float: right;
+    margin-top: 20px;
 }
 
 .navi_btn {
@@ -210,6 +215,7 @@ textarea {
     z-index: 10000;
 }
 
+.nb_wrapper .nav_btn:first-child,
 .navi_btn .nav_btn:first-child { 
     margin-right: 10px;
 }
@@ -223,6 +229,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 45px;
+    border:1px solid #214578;
 }
 
 .nav_btn_next {
@@ -243,185 +250,6 @@ textarea {
     display: inline-block;
 }
 
-
-/* Шапка сайта */
-
-header {
-    max-height: 91px;
-    margin: 10px 0;
-}
-
-header ._container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    display: block;
-    background-image: url(../img/logo.svg);
-    background-repeat: no-repeat;
-    height: 61px;
-    width: 137px;
-}
-
-header .city_time *{
-    margin: auto auto auto 0;
-    position: relative;
-    padding-left: 20px;
-}
-
-header .city_time .time_work{
-    margin-top: 0;
-} 
-
-header .city_time .city_select{ 
-    padding-right: 20px;
-    text-decoration: none;
-    margin-bottom: 0;
-}
-
-header .city_time .city_select:before{
-    content: "";
-    position: absolute;
-    width:11px;
-    height: 17px;
-    background-image: url(../img/icons/map_pin.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    left:0;
-    top:calc(50% - 8px)
-}
-
-header .city_time .city_select:after{
-    content: "";
-    position: absolute;
-    width:15px;
-    height: 7px;
-    background-image: url(../img/icons/arrow.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    right:0;
-    top:calc(50% - 3px)
-}
-
-
-header .city_time .time_work:before{ 
-    content: "";
-    position: absolute;
-    width:13px;
-    height: 13px;
-    background-image: url(../img/icons/time.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    left:0;
-    top:calc(50% - 6px);
-}
-
-header .phone {
-    margin: auto 10px;
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: 900;
-}
-
-.menu li{
-    display: flex;
-}
-
-.menu a:hover{
-    text-decoration: underline;
-    color:#214578;
-}
-
-.menu a{
-    margin: auto 0 auto 10px;
-    text-decoration:  none;
-}
-
-/* Шапка сайта end */
-
-
-/* Баннер на главной */
-
-.bnr_menu {
-   z-index: 1000; 
-   height: 80px;
-   width:1440px;
-   top:30px;
-   left:calc((100% - 1440px) / 2);
-}
-
-.main_slide {
-    position: relative;
-}
-
-.muar {
-    background-color: #16161526;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 900;
-    left: 1px;
-    top: 1px;
-}
-
-.bnr_info {
-    position: absolute;
-    z-index: 1000;
-    top: 25%;
-    left:calc((100% - 1440px) / 2 );
-    color: white;
-    width:33%
-}
-
-.bnr_info ul{
-    list-style: none;
-    padding: 0;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.ak_h1 {
-    font-size: 56px;
-    font-weight: 900;
-    line-height: 1;
-}
-
-/* Баннер на главной end */
-
-/* Услуги на главной */
-
-.usl_line {
-    width:100%;
-    justify-content: space-between;
-}
-
-.usl_blk {
-    padding: 50px 40px;
-    border-radius: 12px;  
-}
-
-.usl_blk h3{
-    text-transform: uppercase;
-}
-
-.usl_blk .price{
-    font-weight: 900;
-    font-size: 34px;
-    margin-top: auto;
-}
-
-.usl_blk ul{
-    padding-left: 0;
-    font-size: 22px;
-}
-
-.usl_line_top {
-    margin-bottom: 25px;
-}
-
-/* Услуги на главной end */
-
 /* Получите бесплатную консультацию */
 
 .free_consultation {
@@ -435,6 +263,25 @@ header .phone {
 
 .free_consultation input:first-child {
     margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) { 
+    .free_consultation ._container {
+        flex-direction: column;
+    }
+
+    .free_consultation ._container div:first-child{ 
+        margin-bottom: 40px;
+    }
+
+    .free_consult_form {
+        flex-direction: column;
+        
+    }
+
+    .free_consult_form div:first-child {
+        margin-right: 0;
+     }
 }
 
 /* Получите бесплатную консультацию end */
