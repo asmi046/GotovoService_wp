@@ -13,3 +13,23 @@ row-gap: 20px;
 .number-line span{
     border-bottom: 2px solid red;
 }
+
+@media (max-width: 1024px) { 
+    .main-cooperation ._container > div:first-child {
+    flex-direction: column;
+ }
+
+}
+@media (max-width: 512px) {
+    .main-cooperation ._container .f_2 .d_flex {
+        flex-direction: column;
+     }
+     .main-cooperation ._container .f_2 .d_flex .f_col {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 0;
+     }
+     .main-cooperation ._container p {
+        width: 136px;
+     }
+}

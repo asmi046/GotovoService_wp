@@ -1,8 +1,8 @@
 <section class="main-cooperation">
-<div class="_container blue_bg white_color brad_12 m_b_40 pad_50_40 d_flex">
+<div class="_container blue_bg white_color brad_12 m_b_40 pad_50_40">
+    <div class="d_flex">
     <div class="f_1">
         <h2>Порядок<br>сотрудничества</h2>
-        <a href="#" class="btn m_t_22">Записаться</a>
     </div>
     <div class="f_2">
         <div class="d_flex jc_sb">
@@ -32,5 +32,7 @@
             </div>
         </div>
     </div>
+    </div>
+    <a href="#" class="btn m_t_22">Записаться</a>
 </div>
 </section>
