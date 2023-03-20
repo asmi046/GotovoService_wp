@@ -1,0 +1,15 @@
+.main-cooperation h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.r_gap {
+row-gap: 20px;
+}
+.cooperation-number {
+    font-size: 90px;
+    line-height: 1;
+}
+.number-line {
+    width: 50px;
+    border-bottom: 2px solid red;
+}
