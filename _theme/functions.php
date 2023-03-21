@@ -1,5 +1,7 @@
 <?php
 
+include "carbon.php";
+
 define("COMPANY_NAME", "");
 define("MAIL_RESEND", "");
 
@@ -60,3 +62,11 @@ function aj_fnc()
 		wp_die('НО-НО-НО!', '', 403);
 	}
 }
+
+//-----Блок описания вывода меню
+
+add_action( 'after_setup_theme', function(){
+	register_nav_menus( [
+		'menu-head' => 'Меню в шапке',
+	] );
+} ); 

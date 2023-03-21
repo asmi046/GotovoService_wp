@@ -67,6 +67,10 @@
     border-right: none;
 }
 
+.main_slide img{
+    width:100%;
+}
+
 .main_slide {
     position: relative;
 }
