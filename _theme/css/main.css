@@ -78,6 +78,9 @@ section h2 {
     color: white;
 }
 
+.d_block{ 
+    display: block;
+}
 
 /* flex */
 
@@ -131,6 +134,10 @@ section h2 {
     margin-top: 22px;
 }
 
+.m_b_22 {
+    margin-bottom: 22px;
+}
+
 .m_t_a {
     margin-top: auto;
 }
@@ -172,6 +179,26 @@ section h2 {
     -moz-box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
     box-shadow: 5px 5px 12px -6px rgba(34, 60, 80, 0.43);
 }
+
+/* градиент */
+
+.select_btn.active,
+.select_btn:hover,
+.gradient {
+    background: linear-gradient(to left bottom, #214578, #55A9E0);
+    color: white;
+    text-decoration: none;
+}
+
+/* скроллинг линии */
+
+.ower_scroll {
+    overflow-x: scroll;
+}
+
+.ower_scroll::-webkit-scrollbar {
+    display: none;
+  }
 
 /* элементы формы */
 

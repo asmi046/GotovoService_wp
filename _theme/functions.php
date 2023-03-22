@@ -32,6 +32,7 @@ function my_assets()
 	wp_enqueue_style("questions-css", get_template_directory_uri() . "/css/questions.css", array(), $style_version, 'all');
 	wp_enqueue_style("vue-modules-style", get_template_directory_uri() . "/css/vue-modules-style.css", array(), $style_version, 'all');
 	wp_enqueue_style("popular-questions", get_template_directory_uri() . "/css/popular-questions.css", array(), $style_version, 'all');
+	wp_enqueue_style("prices", get_template_directory_uri() . "/css/prices.css", array(), $style_version, 'all');
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $style_version, 'all');
 
 	// Подключение скриптов

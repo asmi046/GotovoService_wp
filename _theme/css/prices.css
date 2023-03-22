@@ -1,0 +1,14 @@
+.selector {
+    min-width: 100%;
+}
+
+.select_btn {
+    padding: 10px 35px;
+    font-size: 20px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.select_btn span{ 
+    display: block;
+}
