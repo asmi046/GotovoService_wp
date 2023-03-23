@@ -5,10 +5,10 @@
 .select_btn {
     padding: 10px 35px;
     font-size: 20px;
-    margin-right: 20px;
-    white-space: nowrap;
+    display: inline-block;
 }
 
-.select_btn span{ 
-    display: block;
+
+.prices .swiper-slide{
+    width: auto;
 }

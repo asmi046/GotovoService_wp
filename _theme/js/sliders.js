@@ -31,3 +31,9 @@ var rew = new Swiper(".reviews_slider", {
       prevEl: ".revews-button-prev",
     },
 });
+
+var swiper = new Swiper(".price_slider", {
+  slidesPerView: "auto",
+  slidesPerGroup: 1,
+  spaceBetween: 30,
+});
