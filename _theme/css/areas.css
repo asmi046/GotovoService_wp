@@ -1,0 +1,72 @@
+.areas-tab__tabs {
+    justify-content: space-between;
+}
+.areas-tab__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.areas-tab__item a {
+    padding: 10px;
+    background-color: #D2D1D1;
+    color:#214578;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.areas-districts__group {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: var(--gap);
+    width: 100%;
+    grid-gap: unset;
+}
+
+.districts__group-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    padding-left: 25px;
+}
+
+.districts__group-item::before {
+    font-size: 18px;
+    content: attr(data-letter);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    color:#707070;
+}
+
+.districts__group-item a {
+    text-decoration: none;
+    color: #0070B9;
+}
+
+.districts__group-item a:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.areas-tab__item-img a {
+    text-decoration: none;
+}
+
+.areas-tab__item-img a img {
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) { 
+    .areas-districts__group {
+        grid-template-columns: repeat(3,1fr);
+    }
+ }
+
+ @media (max-width: 512px) {
+    .areas-districts__group {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
