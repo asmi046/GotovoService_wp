@@ -18,7 +18,7 @@
                 <li class="areas-tab__item d_flex"><a href="#">СЗАО</a></li>
             </ul>
             <div class="areas-tab__panels f_1 m_b_40">
-                <h2>ЮЗАО</h2>
+                <h3>ЮЗАО</h3>
                     <div class="areas-districts__group">
                         <div class="districts__group">
                             <div data-letter="А" class="districts__group-item">
@@ -110,7 +110,7 @@
                 <li class="areas-tab__item-img d_flex"><a href="#"><img src="<?php echo get_template_directory_uri();?>/img/icons/icon-metro/imetro14.svg" sizes="any"" alt=""></a></li>
             </ul>
             <div class="areas-tab__panels f_1 m_b_40">
-                <h2>Северное Бутово</h2>
+                <h3>Северное Бутово</h3>
                     <div class="areas-districts__group">
                         <div class="districts__group">
                             <div data-letter="А" class="districts__group-item">
