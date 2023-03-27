@@ -1,3 +1,51 @@
 .main__portfolio ._container {
-    padding: 21px 72px;
+    padding: 21px 72px 50px 72px;
+}
+
+.application-info {
+    padding-top: 19px;
+    padding-left: 36px;
+}
+
+.application-info p:nth-child(n+2){
+    margin-bottom: 12px;
+}
+
+.application-identifier {
+    margin-bottom: 27px;
+}
+
+.application {
+    padding-bottom: 60px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 12px;
+}
+
+.application-identifier {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.application-time::after {
+    content: "";
+    background-image: url("../img/icons/time_red.svg");
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    display: block;
+    top: 2px;
+    left: -23px;
+}
+
+.application-price::after {
+    content: "";
+    background-image: url("../img/icons/price_red.svg");
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: block;
+    top: 2px;
+    left: -23px;
 }
