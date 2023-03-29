@@ -36,12 +36,12 @@
             <div class="sqp">
                 <h3>Реквизиты</h3>
                 <ul>
-                    <li>ООО "Готово Сервис"</li>
-                    <li>ИНН 9715300665</li>
-                    <li><a href="mailto:iceberg@iceberg.ru">iceberg@iceberg.ru</a></li>
-                    <li><a href="tel:84952283451">8(495)228-34-51</a></li>
-                    <li>127549,г.Москва, Алтуфьевское шоссе, д. 64, офис 10</li>
-                    <li>ОГРН 1177746409720</li>
+                    <li><? echo carbon_get_theme_option("company")?></li>
+                    <li>ИНН <? echo carbon_get_theme_option("inn")?></li>
+                    <li><a href="mailto:<? echo carbon_get_theme_option("email")?>"><? echo carbon_get_theme_option("email")?></a></li>
+                    <li><a href="tel:<? echo carbon_get_theme_option("phone")?>"><? echo carbon_get_theme_option("phone")?></a></li>
+                    <li><? echo carbon_get_theme_option("adress")?></li>
+                    <li>ОГРН <? echo carbon_get_theme_option("ogrn")?></li>
                 </ul>
                 <a href="#">Политика персональных данных</a>
                 <p>* Некоторые виды работ могут быть выполнены подрядными организациями</p>

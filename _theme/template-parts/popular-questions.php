@@ -3,33 +3,24 @@
         <h2>Популярные вопросы</h2>
         <div class="d_flex">   
             <div class="f_1 faq">
+                
+                <?php
+                    $pop_q = carbon_get_theme_option('faq');
+                    $i = 1;
+					foreach ($pop_q as $pq)  {
+                ?>
+
                 <details>
-                    <summary>Почему холодильник перестал охлаждать?</summary>
+                    <summary><?echo $pq["q"]; ?></summary>
                     <div class="response">
-                        Something small enough to escape casual notice.
+                        <?echo $pq["r"]; ?>
                     </div>
                 </details>
 
-                <details>
-                    <summary>Из-за чего духовка показывает неправильную температуру?</summary>
-                    <div class="response">
-                        Something small enough to escape casual notice.
-                    </div>
-                </details>
-
-                <details>
-                    <summary>По какой причине кофемашина не реагирует на включение?</summary>
-                    <div class="response">
-                        Something small enough to escape casual notice.
-                    </div>
-                </details>
-
-                <details>
-                    <summary>Пылесос перестал включаться, что могло случиться?</summary>
-                    <div class="response">
-                        Something small enough to escape casual notice.
-                    </div>
-                </details>
+                <?
+                    }
+                ?>
+                
 
                 <a href="#" class="btn btn_full">Получить консультацию</a>
             </div>
