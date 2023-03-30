@@ -1,0 +1,31 @@
+.video__reviews-link {
+    margin-bottom: 90px;
+}
+.card-video {
+    min-height: auto;
+    position: relative;
+}
+.card-video__img {
+    position: relative;
+}
+.card-video__img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(140, 136, 172, 0.25) 0%, rgba(124, 109, 158, 0.85) 100%);
+    border-radius: 12px;
+}
+.card-video__ifor-block {
+    position: absolute;
+    top: 250px;
+    left:22px;
+    z-index: 3;
+}
+
+.video__text-name {
+    font-size: 24px;
+}
