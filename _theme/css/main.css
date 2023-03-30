@@ -155,6 +155,10 @@ section h3 {
 
 /* padding */
 
+.pad_50{
+    padding: 30px 0;
+}
+
 .pad_50_40{
     padding: 50px 40px;
 }
@@ -346,3 +350,67 @@ textarea {
     right: 50px;
 }
 /* отзывы end */
+
+/* Баннер страницы */
+
+
+.page_head #breadcrumbs a{
+    color:white;
+    padding: 30px 0;
+    display: inline-block;
+}
+
+.page_head {
+    padding: 30px 0;
+}
+
+
+.page_head .bnr_menu{
+    position: relative;
+    top:unset;
+    left:unset;
+}
+
+/* Баннер страницы end */
+
+/* Оформление текстового контента*/
+
+.text_blk ul{
+    list-style: none;
+}
+
+.text_blk ul li{
+    position: relative;
+}
+
+.text_blk ul li::before{
+    content:"";
+    width:6px;
+    height: 6px;
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 3px);
+    background-color: #214578;
+}
+
+.text_blk p{
+    margin: 1em 0;
+}
+
+.text_blk a:hover { 
+    text-decoration: underline;
+}
+
+.text_blk a { 
+    color:#214578
+}
+
+.text_blk h1,
+.text_blk h2,
+.text_blk h3,
+.text_blk h4 {
+    margin: 1em 0;
+}
+
+
+/* Оформление текстового контента end */

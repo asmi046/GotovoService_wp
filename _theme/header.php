@@ -16,3 +16,6 @@
     <?php wp_head();?>
 </head>
     <body>
+         <?php get_template_part('template-parts/city-select');?>
+
+        <?php get_template_part('template-parts/head');?>

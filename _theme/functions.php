@@ -16,8 +16,8 @@ function my_assets()
 
 	// Подключение стилей 
 
-	$style_version = "1.0.11";
-	$scrypt_version = "1.0.11";
+	$style_version = "1.0.11".rand(1,100);
+	$scrypt_version = "1.0.11".rand(1,100);
 
 	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $style_version, 'all'); 
 	wp_enqueue_style("swiper-css", get_template_directory_uri() . "/css/swiper-bundle.min.css", array(), null, 'all'); 

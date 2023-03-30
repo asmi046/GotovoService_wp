@@ -1,3 +1,5 @@
+<?php get_template_part('template-parts/footer');?>    
+
 <script type="module" src="<?php echo get_template_directory_uri()?>/js/components/city-select.js"></script>
 <script type="module" src="<?php echo get_template_directory_uri()?>/js/vue-modules.js"></script>
 
