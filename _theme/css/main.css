@@ -154,7 +154,9 @@ section h3 {
 }
 
 /* padding */
-
+.pad_l_25 {
+    padding-left: 25px;
+}
 .pad_50{
     padding: 30px 0;
 }

@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="application d_flex f_col">
-                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka1.webp" alt="Заявка1">
+                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka3.webp" alt="Заявка1">
                     <div class="application-info">
                     <p class="application-identifier">Заявка 358756</p>
                     <p class="application-cause">Причина: Утечка хладогента</p>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="application d_flex f_col">
-                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka1.webp" alt="Заявка1">
+                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka2.webp" alt="Заявка1">
                     <div class="application-info">
                     <p class="application-identifier">Заявка 358756</p>
                     <p class="application-cause">Причина: Утечка хладогента</p>

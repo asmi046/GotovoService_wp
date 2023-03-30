@@ -1,0 +1,42 @@
+.master-main .select_btn {
+    border: 1px solid #D2D1D145;
+    margin-right: 20px;
+}
+
+.master-card {
+    flex: 1;
+    margin-right: 35px;
+    position: relative;
+}
+.master-card:nth-child(3){
+    margin-right: 0;
+}
+
+.master-done {
+    padding-left: 25px;
+}
+.master-text {
+    color: #FFFFFF;
+    background-color: #214578;
+}
+
+.master-count {
+    margin-right: 10px;
+    font-size: 48px;
+}
+
+.master-name {
+    font-size: 30px;
+    padding: 18px 0 4px 25px;
+}
+
+.master-role {
+    padding: 18px 4px 30px 25px;
+}
+.master-photo {
+    position: absolute;
+    z-index: 2;
+    max-width: 270px;
+    top: -71px;
+    left: 186px;
+}
