@@ -349,14 +349,34 @@ textarea {
     top:0;
     right: 50px;
 }
+
+.reviews_in_page  {
+    justify-content: space-between;
+}
+
+.reviews_in_page .rev_blk {
+    width: 31%;
+    margin-bottom: 40px;
+}
+
 /* отзывы end */
 
 /* Баннер страницы */
 
 
+.page_head .page_head_img{ 
+    width:250px;
+    bottom: 0;
+    left: calc((100% / 2) + 480px);
+    z-index: 0;
+}
+
+.page_head #breadcrumbs{
+    padding: 30px 0;
+}
+
 .page_head #breadcrumbs a{
     color:white;
-    padding: 30px 0;
     display: inline-block;
 }
 
@@ -369,6 +389,35 @@ textarea {
     position: relative;
     top:unset;
     left:unset;
+}
+
+@media (max-width: 1480px) {
+    .page_head .page_head_img {
+        right: 1%;
+        left: unset;
+    }
+}
+
+@media (max-width: 1080px) {
+    
+.page_head #breadcrumbs{
+    padding: 0 0 30px 0;
+}
+}
+
+@media (max-width: 768px) {
+    .page_head .page_head_img {
+        width:130px;
+    }
+
+    .page_head h1 {
+        font-size: 32px;
+        z-index: 1000;
+    }
+
+    .page_head #breadcrumbs{ 
+        z-index: 1000; 
+    }
 }
 
 /* Баннер страницы end */
@@ -414,3 +463,47 @@ textarea {
 
 
 /* Оформление текстового контента end */
+
+/* Подменю на главной */
+
+.menu li{
+    position: relative;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:100%;
+    background-color: white;
+    z-index: 1111000;
+    min-width: 200px;
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.menu li ul li a{ 
+    padding: 5px 10px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.menu li:hover > a{
+    color:#214578;
+    text-decoration: underline;
+
+} 
+
+.menu li ul li a:hover{ 
+    background-color: #214578;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover ul{ 
+    display: block;
+    
+}
+
+/* Подменю на главной end */

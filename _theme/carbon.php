@@ -40,6 +40,12 @@ function crb_attach_theme_options() {
 			))
         ));
 
+    Container::make( 'term_meta', __( 'Дополнительные поля для категорий', 'crb' ) )
+    ->where( 'term_taxonomy', '=', 'category' ) // only show our new field for categories
+    ->add_fields( array(
+        Field::make('image', 'page_head_img', 'Фото в баннере страницы')
+    ) );
+
     
     Container::make('post_meta', 'reviews_fild', 'Отзывы - поля для страницы')
     ->show_on_template(array('page-review.php'))
@@ -47,6 +53,14 @@ function crb_attach_theme_options() {
         Field::make('text', 'reviews_lnk', 'Ссылка на источник отзыва'),
         
     ));
+    
+    Container::make('post_meta', 'all_page_filds', 'Дополнительные поля для страниц и постов')
+    ->add_fields(array(
+        Field::make('image', 'page_head_img', 'Фото в баннере страницы')
+        
+    ));
+
+    
 }
 
 

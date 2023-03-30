@@ -2,7 +2,7 @@
     <div class="_container">
         <div class="navigation_footer d_flex f_wrap">
             <div>
-                <img class="logo_footer" src="<?php echo get_template_directory_uri();?>/img/logo_white.svg" sizes="any" alt="Логотип подвал">
+                <a href="<? echo get_site_url();?>"> <img class="logo_footer" src="<?php echo get_template_directory_uri();?>/img/logo_white.svg" sizes="any" alt="Логотип подвал"></a>
             </div>
             
             
