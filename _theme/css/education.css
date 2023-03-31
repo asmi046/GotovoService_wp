@@ -1,0 +1,65 @@
+.education-doctrine {
+    gap: 35px;
+}
+
+.education-box{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    color: #FFFFFF;
+    background-color: #4A93C9;
+}
+.education-info {
+    display: flex;
+    font-size: 30px;
+    line-height: 1.1;
+    padding:24px 0 15px 28px;
+}
+.education-info span {
+    display: block;
+    margin-right: 25px;
+    font-size: 70px;
+}
+
+.education-doctrine .education-list {
+    padding: 15px 0 45px 0;
+    margin-left: 95px;
+}
+.education-list li {
+    position: relative;
+    margin-bottom: 10px;
+}
+.education-list li:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icons/elips.svg");
+}
+
+/*Стили для блока документации */
+
+.documents-image {
+    column-gap: 30px;
+    margin-top: 0.7em;
+}
+.documents-icons {
+    position: relative;
+    margin-bottom: 30px;
+}
+.documents-icons::before{
+    content: "";
+    position: relative;
+    display: block;
+    top:0;
+    left: 0;
+    width: 68px;
+    height: 10px;
+    background-image: url("../img/icons/red_three.svg");
+}
+.documents-title p {
+    font-size: 30px;
+    line-height: 1.2;
+}

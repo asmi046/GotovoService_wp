@@ -30,7 +30,8 @@ function my_assets()
 	wp_enqueue_style("footer-css", get_template_directory_uri() . "/css/footer.css", array(), $style_version, 'all');
 	wp_enqueue_style("areas-css", get_template_directory_uri() . "/css/areas.css", array(), $style_version, 'all');
 	wp_enqueue_style("whyar-css", get_template_directory_uri() . "/css/whyare.css", array(), $style_version, 'all');
-	wp_enqueue_style("rewiew-video.css-css", get_template_directory_uri() . "/css/rewiew-video.css", array(), $style_version, 'all');
+	wp_enqueue_style("review-video-css", get_template_directory_uri() . "/css/review-video.css", array(), $style_version, 'all');
+	wp_enqueue_style("education-css", get_template_directory_uri() . "/css/education.css", array(), $style_version, 'all');
 	wp_enqueue_style("cooperation-css", get_template_directory_uri() . "/css/cooperation.css", array(), $style_version, 'all');
 	wp_enqueue_style("questions-css", get_template_directory_uri() . "/css/questions.css", array(), $style_version, 'all');
 	wp_enqueue_style("vue-modules-style", get_template_directory_uri() . "/css/vue-modules-style.css", array(), $style_version, 'all');
