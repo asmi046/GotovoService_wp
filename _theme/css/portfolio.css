@@ -49,3 +49,9 @@
     top: 2px;
     left: -23px;
 }
+
+@media (max-width: 1024px) { 
+    .main__portfolio ._container {
+        padding: 21px 17px 50px 17px;
+ }
+}

@@ -1,0 +1,82 @@
+.breakdowns-swiper .swiper-slide {
+    width: auto;
+}
+.breakdowns .services {
+column-gap: 31px;
+}
+.breakdowns-card {
+    flex: 1;
+    border: 1px solid grey;
+  
+}
+.breakdowns-card p {
+    padding-left:  44px;
+    padding-right: 71px;
+}
+.breakdowns-title {
+    font-size: 24px;
+    padding: 16px 0 16px 0;
+    background: linear-gradient(to left bottom, #214578, #55A9E0);
+}
+.breakdowns-text {
+    margin: 20px 0 40px 0
+}
+.breakdowns-text p {
+margin-bottom: 10px;
+}
+
+.breakdowns-sign {
+    position: relative;
+}
+
+.breakdowns-sign::before {
+    content: "";
+    position: absolute;
+    top:2px;
+    left: 14px;
+    width: 18px;
+    height: 17px;
+    background-image: url("../img/icons/work_red.svg");
+}
+
+.breakdowns-cause {
+    position: relative;
+}
+
+.breakdowns-cause::before {
+    content: "";
+    position: absolute;
+    top:2px;
+    left: 14px;
+    width: 20px;
+    height: 17px;
+    background-image: url("../img/icons/info_red.svg");
+}
+
+.breakdowns-price {
+    position: relative;
+}
+
+.breakdowns-price::before {
+    content: "";
+    position: absolute;
+    top:2px;
+    left: 14px;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/icons/price_red.svg");
+}
+
+.swiper-footer .swiper-slide {
+    text-align: center;
+}
+
+@media (max-width: 1024px) { 
+    .breakdowns .services {
+        column-gap: 13px;
+    }
+    .breakdowns-card p {
+        padding-left: 38px;
+        padding-right: 14px;
+    }
+}

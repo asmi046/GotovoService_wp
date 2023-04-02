@@ -26,3 +26,10 @@
 .video__text-name {
     font-size: 24px;
 }
+
+@media (max-width: 1024px) { 
+    .card-video__ifor-block {
+        top: 150px;
+        left: 10px;
+    }
+ }

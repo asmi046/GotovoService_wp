@@ -1,7 +1,7 @@
 <section class="main_education">
     <div class="_container">
         <h2>Обучение мастеров</h2>
-            <div class="education-doctrine d_flex jc_sb m_b_40">
+            <div class="education-doctrine d_flex jc_sb m_b_40 f_wrap">
                 <div class="education-box brad_12">
                     <div>
                         <p class="education-info"><span>1</span>ВЫГОДА<br> УЧЕНИКОВ</p>
@@ -37,13 +37,13 @@
                 
             </div>
 
-            <div class="education-documents d_flex m_b_40 jc_sb">
+            <div class="education-documents d_flex m_b_40 jc_sb f_wrap">
                 <div class="documents-title">
                     <h2>Документы,<br>которые вы получите</h2>
                     <div class="documents-icons"></div>
                     <p>Сертификат мастера;<br>Документация к любой технике.</p>
                 </div>
-                <div class="documents-image d_flex">
+                <div class="documents-image d_flex f_wrap">
                     <img src="<?php echo get_template_directory_uri();?>/img/picture/certificate.webp" alt="Документ 1">
                     <img src="<?php echo get_template_directory_uri();?>/img/picture/certificate.webp" alt="Документ 2">
                 </div>

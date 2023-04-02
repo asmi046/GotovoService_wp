@@ -3,7 +3,7 @@
         <h2>Портфолио</h2>
             <div class="d_flex f_col m_b_40">
                 <div class="m_b_22">
-                    <div class="d_flex jc_sb">
+                    <div class="d_flex jc_sb f_gap_10">
                             <a class="white_bg  brad_12 select_btn" href="#">Ремонт ноутбуков</a>
                             <a class="white_bg  brad_12 select_btn active" href="#">Ремонт компьютеров</a>
                             <a class="white_bg  brad_12 select_btn" href="#">Ремонт телефонов</a>
@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-application d_flex jc_sb">
+            <div class="portfolio-application d_flex jc_sb f_gap_10">
                 <div class="application d_flex f_col">
                     <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka1.webp" alt="Заявка1">
                     <div class="application-info">

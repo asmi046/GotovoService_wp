@@ -1,7 +1,7 @@
 <section class="main-video">
     <div class="_container">
         <h2>Видео отзывы</h2>
-        <div class="d_flex jc_sb m_b_40">
+        <div class="d_flex jc_sb m_b_40 f_gap_10">
             <div class="card-video">
                 <div class="card-video__img brad_12">
                     <img src="<?php echo get_template_directory_uri();?>/img/picture/review1.webp" sizes="16x16" alt="">

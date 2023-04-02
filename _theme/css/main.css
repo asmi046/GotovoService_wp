@@ -115,7 +115,12 @@ section h3 {
 .f_wrap {
     flex-wrap: wrap;
 }
-
+.f_gap_10 {
+    gap: 10px;
+}
+.f_gap_20 {
+    gap: 20px;
+}
 /* margin */
 .m_r_30 {
     margin-right: 30px;

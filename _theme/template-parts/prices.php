@@ -8,11 +8,11 @@
                 <div class="swiper price_slider">
                     <div class="swiper-wrapper">
                         
-                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#"><span>Ремонт ноутбуков</span></a>
-                        <a class="swiper-slide gray_bg brad_12 select_btn active" href="#">Ремонт компьютеров</a>
-                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Ремонт телефонов</a>
-                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Ремонт холодильников</a>
-                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Ремонт электроплит</a>
+                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#"><span>Ремонт электрики</span></a>
+                        <a class="swiper-slide gray_bg brad_12 select_btn active" href="#">Ремонт цифровой техники</a>
+                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Ремонт бытовой техники</a>
+                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Мастер на час</a>
+                        <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Установка бытовой техники</a>
                         <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Ремонт электроплит</a>
                         <a class="swiper-slide gray_bg brad_12 select_btn" href="#">Ремонт электроплит</a>
                     </div>

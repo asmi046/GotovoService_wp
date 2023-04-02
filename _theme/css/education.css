@@ -13,7 +13,7 @@
     display: flex;
     font-size: 30px;
     line-height: 1.1;
-    padding:24px 0 15px 28px;
+    padding:24px 28px 15px 28px;
 }
 .education-info span {
     display: block;

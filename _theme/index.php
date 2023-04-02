@@ -11,6 +11,7 @@
     <?php get_template_part('template-parts/education-in-main');?>
     <?php get_template_part('template-parts/cooperation-in-main');?>
     <?php get_template_part('template-parts/masters-in-main');?>
+    <?php get_template_part('template-parts/main-breakdowns');?>
     <?php get_template_part('template-parts/breakdowns-in-main');?>
     <?php get_template_part('template-parts/portfolio');?>
     <?php get_template_part('template-parts/prices');?>
