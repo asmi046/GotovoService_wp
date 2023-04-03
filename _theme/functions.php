@@ -1,5 +1,7 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 include "carbon.php";
 
 define("COMPANY_NAME", "");
@@ -163,7 +165,7 @@ function newsendr()
 		);
 
 		//  add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
-		if (wp_mail($send_adr, $subj, $content))
+		if (wp_mail($send_adr, $subj, $content, $headers))
 		{
 			wp_die(true);
 		} else {
