@@ -122,6 +122,7 @@ function message_to_telegram($text)
 		            CURLOPT_POSTFIELDS => array(
 		                'chat_id' => trim($arr_chat[$i]),
 		                'text' => $text,
+						'parse_mode' => "HTML",
 		            ),
 		        )
 		    );
@@ -150,7 +151,13 @@ function newsendr()
 
 		$subj = "Сообщение с сайта";
 		$content = "<h2>Новое сообщение с сайта</h2>";
-		$content_tg = "Новое сообщение с сайта\n\r";
+		$content_tg = "<b>Новое сообщение с сайта</b>\n\r";
+
+		foreach ($_REQUEST as $key => $value)
+		{
+				$content .= $key.": <strong>".$value."</strong><br/>";
+				$content_tg .= $key.": ".$value."\n\r";	
+		}
 
 		// for ($i =0; $i < count($_REQUEST["fildname"]); $i++) {
 		// 	$content .= $_REQUEST["fildval"][$i].": <strong>".$_REQUEST[$_REQUEST["fildname"][$i]]."</strong><br/>";
@@ -164,12 +171,13 @@ function newsendr()
 			'content-type: text/html',
 		);
 
-		//  add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
+		add_filter('wp_mail_content_type', function () {return "text/html";} );
+		
 		if (wp_mail($send_adr, $subj, $content, $headers))
 		{
 			wp_die(true);
 		} else {
-			wp_die("NO ОК", '', 404 );
+			wp_die("NO ОК", '', 403 );
 		}
 		
 

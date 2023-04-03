@@ -8,12 +8,13 @@
                     <form action="#" class="d_flex f_col">
                         <div class="d_flex">
                             <div class="d_flex f_1 f_col m_r_25">
-                                <input type="text" name="name" placeholder="Имя*">
+                                <input type="text" name="name" placeholder="Имя">
                                 <input type="tel" name="phone" placeholder="+7 (___) ___-__-___">
                             </div>
                             <div class="d_flex f_1 f_col">
-                                <textarea class="f_1" name="" placeholder="Вопрос"></textarea>
+                                <textarea name="message" class="f_1" name="" placeholder="Вопрос"></textarea>
                             </div>
+                            <input type="hidden" name="form_name" value="Блок: Остались вопросы">
                         </div>
 
                         <div class="d_flex m_t_22">
@@ -21,7 +22,7 @@
                         </div>
 
                         <div class="d_flex m_t_22">
-                            <button class="btn m_t_a">Отправить</button>
+                            <button type="submit" class="btn m_t_a">Отправить</button>
                         </div>
                     </form>
             </div>

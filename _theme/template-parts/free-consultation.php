@@ -8,8 +8,10 @@
         <div class="f_1">
             <form class="d_flex free_consult_form" action="">
                 <div class="d_flex f_1 f_col m_r_70">
+                    
                     <input type="text" placeholder="Имя" name="name" value="">
                     <input type="tel" placeholder="+7 (___) ___-__-__" name="phone" value="">
+                    <input type="hidden" name="form_name" value="Блок: Получите бесплатную консультацию">
                 </div>
 
                 <div class="d_flex f_1">
