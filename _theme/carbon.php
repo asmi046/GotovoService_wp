@@ -14,6 +14,9 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'adress', 'Адрес' )->set_width(100),
             Field::make( 'text', 'worck_time', 'Время работы' )->set_width(100),
             Field::make( 'text', 'phone', 'Телефон для связи' )->set_width(100),
+            Field::make( 'text', 'email_send', 'Почта для отправки' )->set_width(100),
+            Field::make( 'text', 'tg_token', 'Токен Телеграм' )->set_width(100),
+            Field::make( 'text', 'tg_chats', 'Чат Телеграмм' )->set_width(100),
         ) )
         ->add_tab('Слайдер на главной', array( 
             Field::make('complex', 'main_slider', 'Настройки слайдера на главной')

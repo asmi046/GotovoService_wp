@@ -9,11 +9,11 @@
             <form class="d_flex free_consult_form" action="">
                 <div class="d_flex f_1 f_col m_r_70">
                     <input type="text" placeholder="Имя" name="name" value="">
-                    <input type="text" placeholder="Телефон*" name="phone" value="">
+                    <input type="tel" placeholder="+7 (___) ___-__-__" name="phone" value="">
                 </div>
 
                 <div class="d_flex f_1">
-                    <button class="btn m_t_a">Отправить</button>
+                    <button type="submit" class="btn m_t_a">Отправить</button>
                 </div>
                 
             </form>
