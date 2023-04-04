@@ -32,6 +32,31 @@ var rew = new Swiper(".reviews_slider", {
     },
 });
 
+var v_rew = new Swiper(".video_reviews_slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop:true,
+
+  breakpoints: {
+    1920: {
+      slidesPerView: 4,
+    },
+
+    1025: {
+      slidesPerView: 3,
+    },
+
+    512: {
+      slidesPerView: 2,
+    },
+  },
+
+  navigation: {
+      nextEl: ".video-revews-button-next",
+      prevEl: ".video-revews-button-prev",
+    },
+});
+
 var swiper = new Swiper(".price_slider", {
   slidesPerView: "auto",
   slidesPerGroup: 1,

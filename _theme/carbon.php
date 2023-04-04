@@ -41,6 +41,16 @@ function crb_attach_theme_options() {
 					->set_width(50),
 
 			))
+        ))
+        ->add_tab('Видеоотзывы', array( 
+            Field::make('complex', 'video_reviews', 'Видеоотзывы')
+			->add_fields(array(
+                Field::make('image', 'img', 'Фото')->set_width(20),
+				Field::make('text', 'name', 'Имя')->set_width(20),
+				Field::make('text', 'subtitle', 'Подзаголовок')->set_width(20),
+				Field::make('text', 'znumber', 'Номер заявки')->set_width(20),
+				Field::make('text', 'lnk', 'Ссылка')->set_width(20),
+			))
         ));
 
     Container::make( 'term_meta', __( 'Дополнительные поля для категорий', 'crb' ) )
