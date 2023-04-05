@@ -1,6 +1,8 @@
 .card-video {
-    /* min-height: auto; */
     position: relative;
+    max-height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .card-video__play {
@@ -36,7 +38,7 @@
     z-index: 2;
     background-color: #757474;
     mix-blend-mode: multiply;
-    border-radius: 12px;
+    
 }
 .card-video__ifor-block {
     position: absolute;

@@ -45,6 +45,7 @@ function my_assets()
 
 	// Подключение скриптов
 
+	wp_enqueue_script('fslightbox-js', get_template_directory_uri() . '/js/fslightbox.js', array(), null, true);
 	wp_enqueue_script('imask-js', get_template_directory_uri() . '/js/imask.js', array(), null, true);
 	wp_enqueue_script('sender-js', get_template_directory_uri() . '/js/sender.js', array(), null, true);
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), null, true);

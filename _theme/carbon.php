@@ -31,7 +31,7 @@ function crb_attach_theme_options() {
 					->set_width(25),
 
 			))
-        ))    
+        ))   
         ->add_tab('Часто задаваемые вопросы', array( 
             Field::make('complex', 'faq', 'Часто задаваемые вопросы')
 			->add_fields(array(
@@ -51,6 +51,25 @@ function crb_attach_theme_options() {
 				Field::make('text', 'znumber', 'Номер заявки')->set_width(20),
 				Field::make('text', 'lnk', 'Ссылка')->set_width(20),
 			))
+        ))
+        ->add_tab('Мастера', array( 
+            Field::make('complex', 'comp_masters', 'Мастера по ремонту компютерной техники')
+			->add_fields(array(
+                Field::make('image', 'img', 'Фото')->set_width(20),
+				Field::make('text', 'name', 'Имя')->set_width(20),
+				Field::make('text', 'dolgnost', 'Должность')->set_width(20),
+				Field::make('text', 'rem_count', 'Количество ремонтов')->set_width(20),
+				Field::make('text', 'lnk', 'Ссылка на видео')->set_width(20),
+            )),
+
+            Field::make('complex', 'bit_masters', 'Мастера по ремонту бытовой техники')
+			->add_fields(array(
+                Field::make('image', 'img', 'Фото')->set_width(20),
+				Field::make('text', 'name', 'Имя')->set_width(20),
+				Field::make('text', 'dolgnost', 'Должность')->set_width(20),
+				Field::make('text', 'rem_count', 'Количество ремонтов')->set_width(20),
+				Field::make('text', 'lnk', 'Ссылка на видео')->set_width(20),
+            ))
         ));
 
     Container::make( 'term_meta', __( 'Дополнительные поля для категорий', 'crb' ) )
@@ -61,9 +80,19 @@ function crb_attach_theme_options() {
 
     
     Container::make('post_meta', 'reviews_fild', 'Отзывы - поля для страницы')
-    ->show_on_template(array('page-review.php'))
+    // ->show_on_template(array('page-review.php'))
+    ->where('post_template', '='. 'page-review.php')
     ->add_fields(array(
         Field::make('text', 'reviews_lnk', 'Ссылка на источник отзыва'),
+        
+    ));
+
+
+
+    Container::make('post_meta', 'contacts_fild', 'Для контактов')
+    ->where( 'post_id', 'IN', array(13, 15) )
+    ->add_fields(array(
+        Field::make('text', 'reviews_lnk_1', 'Ссылка на источник отзыва11'),
         
     ));
     

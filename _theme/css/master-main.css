@@ -1,3 +1,11 @@
+.master-info.active {
+    display: flex;
+}
+
+.master-info {
+    display: none;
+}
+
 .master-main .select_btn {
     border: 1px solid #D2D1D145;
     margin-right: 20px;
@@ -14,6 +22,7 @@
 
 .master-done {
     padding-left: 25px;
+    line-height: 1;
 }
 .master-text {
     color: #FFFFFF;
@@ -26,12 +35,16 @@
 }
 
 .master-name {
+    width: 55%;
     font-size: 30px;
     padding: 18px 0 4px 25px;
+    line-height: 1;
 }
 
 .master-role {
+    width: 55%;
     padding: 18px 4px 30px 25px;
+    line-height: 1;
 }
 .master-photo {
     position: absolute;

@@ -2,7 +2,7 @@
     <div class="_container">
         <h2>Обучение мастеров</h2>
             <div class="education-doctrine d_flex jc_sb m_b_40 f_wrap">
-                <div class="education-box brad_12">
+                <div class="education-box brad_12 gradient">
                     <div>
                         <p class="education-info"><span>1</span>ВЫГОДА<br> УЧЕНИКОВ</p>
                     </div>
@@ -13,7 +13,7 @@
                     </ul>
                 </div>
 
-                <div class="education-box brad_12">
+                <div class="education-box brad_12 gradient">
                     <div>
                         <p class="education-info"><span>2</span>ПРАКТИЧЕСКИЕ<br> ЗАНЯТИЯ</p>
                     </div>
@@ -24,7 +24,7 @@
                     </ul>
                 </div>
 
-                <div class="education-box brad_12">
+                <div class="education-box brad_12 gradient">
                     <div>
                         <p class="education-info"><span>3</span>ИНДИВИДУАЛЬНЫЙ<br> ПОДХОД</p>
                     </div>
