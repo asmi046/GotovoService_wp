@@ -18,39 +18,40 @@ function my_assets()
 
 	// Подключение стилей 
 
-	$style_version = "1.0.11".rand(1,100);
+	$all_version = "1.0.11".rand(1,100);
 	$scrypt_version = "1.0.11".rand(1,100);
 
-	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $style_version, 'all'); 
+	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $all_version, 'all'); 
 	wp_enqueue_style("swiper-css", get_template_directory_uri() . "/css/swiper-bundle.min.css", array(), null, 'all'); 
-	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $style_version, 'all'); 
-	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $style_version, 'all'); 
-	wp_enqueue_style("site-header-css", get_template_directory_uri() . "/css/site-header.css", array(), $style_version, 'all'); 
-	wp_enqueue_style("main-banner-css", get_template_directory_uri() . "/css/main-banner.css", array(), $style_version, 'all');
-	wp_enqueue_style("master-main-css", get_template_directory_uri() . "/css/master-main.css", array(), $style_version, 'all');
-	wp_enqueue_style("breakdowns-css", get_template_directory_uri() . "/css/breakdowns.css", array(), $style_version, 'all');
-	wp_enqueue_style("services-css", get_template_directory_uri() . "/css/services.css", array(), $style_version, 'all'); 
-	wp_enqueue_style("footer-css", get_template_directory_uri() . "/css/footer.css", array(), $style_version, 'all');
-	wp_enqueue_style("areas-css", get_template_directory_uri() . "/css/areas.css", array(), $style_version, 'all');
-	wp_enqueue_style("whyar-css", get_template_directory_uri() . "/css/whyare.css", array(), $style_version, 'all');
-	wp_enqueue_style("review-video-css", get_template_directory_uri() . "/css/review-video.css", array(), $style_version, 'all');
-	wp_enqueue_style("education-css", get_template_directory_uri() . "/css/education.css", array(), $style_version, 'all');
-	wp_enqueue_style("cooperation-css", get_template_directory_uri() . "/css/cooperation.css", array(), $style_version, 'all');
-	wp_enqueue_style("questions-css", get_template_directory_uri() . "/css/questions.css", array(), $style_version, 'all');
-	wp_enqueue_style("vue-modules-style", get_template_directory_uri() . "/css/vue-modules-style.css", array(), $style_version, 'all');
-	wp_enqueue_style("popular-questions", get_template_directory_uri() . "/css/popular-questions.css", array(), $style_version, 'all');
-	wp_enqueue_style("portfolio-css", get_template_directory_uri() . "/css/portfolio.css", array(), $style_version, 'all');
-	wp_enqueue_style("prices", get_template_directory_uri() . "/css/prices.css", array(), $style_version, 'all');
-	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $style_version, 'all');
+	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $all_version, 'all'); 
+	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $all_version, 'all'); 
+	wp_enqueue_style("site-header-css", get_template_directory_uri() . "/css/site-header.css", array(), $all_version, 'all'); 
+	wp_enqueue_style("main-banner-css", get_template_directory_uri() . "/css/main-banner.css", array(), $all_version, 'all');
+	wp_enqueue_style("master-main-css", get_template_directory_uri() . "/css/master-main.css", array(), $all_version, 'all');
+	wp_enqueue_style("breakdowns-css", get_template_directory_uri() . "/css/breakdowns.css", array(), $all_version, 'all');
+	wp_enqueue_style("services-css", get_template_directory_uri() . "/css/services.css", array(), $all_version, 'all'); 
+	wp_enqueue_style("footer-css", get_template_directory_uri() . "/css/footer.css", array(), $all_version, 'all');
+	wp_enqueue_style("areas-css", get_template_directory_uri() . "/css/areas.css", array(), $all_version, 'all');
+	wp_enqueue_style("whyar-css", get_template_directory_uri() . "/css/whyare.css", array(), $all_version, 'all');
+	wp_enqueue_style("review-video-css", get_template_directory_uri() . "/css/review-video.css", array(), $all_version, 'all');
+	wp_enqueue_style("education-css", get_template_directory_uri() . "/css/education.css", array(), $all_version, 'all');
+	wp_enqueue_style("cooperation-css", get_template_directory_uri() . "/css/cooperation.css", array(), $all_version, 'all');
+	wp_enqueue_style("questions-css", get_template_directory_uri() . "/css/questions.css", array(), $all_version, 'all');
+	wp_enqueue_style("vue-modules-style", get_template_directory_uri() . "/css/vue-modules-style.css", array(), $all_version, 'all');
+	wp_enqueue_style("popular-questions", get_template_directory_uri() . "/css/popular-questions.css", array(), $all_version, 'all');
+	wp_enqueue_style("portfolio-css", get_template_directory_uri() . "/css/portfolio.css", array(), $all_version, 'all');
+	wp_enqueue_style("prices", get_template_directory_uri() . "/css/prices.css", array(), $all_version, 'all');
+	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $all_version, 'all');
 
 	// Подключение скриптов
 
-	wp_enqueue_script('fslightbox-js', get_template_directory_uri() . '/js/fslightbox.js', array(), null, true);
-	wp_enqueue_script('imask-js', get_template_directory_uri() . '/js/imask.js', array(), null, true);
-	wp_enqueue_script('sender-js', get_template_directory_uri() . '/js/sender.js', array(), null, true);
-	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), null, true);
-	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), null, true);
-	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), null, true);
+	wp_enqueue_script('fslightbox-js', get_template_directory_uri() . '/js/fslightbox.js', array(), $all_version, true);
+	wp_enqueue_script('imask-js', get_template_directory_uri() . '/js/imask.js', array(), $all_version, true);
+	wp_enqueue_script('sender-js', get_template_directory_uri() . '/js/sender.js', array(), $all_version, true);
+	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), $all_version, true);
+	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $all_version, true);
+	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), $all_version, true);
+	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), $all_version, true);
 	
 	
 

@@ -9,63 +9,80 @@ if ($comp_masters) {
             <div class="d_flex f_col m_b_40">
                 <div class="m_b_22">
                     <div class="d_flex">
-                            <a class="white_bg  brad_12 select_btn active" href="#">Ремонт компьютерной техники</a>
+                            <a data-masterbox="master-info1" class="masters_selector white_bg  brad_12 select_btn active" href="#">Ремонт компьютерной техники</a>
                             <?if ($bit_masters) {?>
-                                <a class="white_bg  brad_12 select_btn" href="#">Ремонт компьютерной техники</a>
+                                <a data-masterbox="master-info2" class="masters_selector white_bg  brad_12 select_btn" href="#">Ремонт компьютерной техники</a>
                             <?}?>
                     </div>
                 </div>
             </div>
             
-            <div class="master-info d_flex m_b_40 active">
-                <?php
+            <div id="master-info1" class="swiper master-info master-info1 d_flex m_b_40 active">
+                <div class="swiper-wrapper">
+                    <?php
                         $i = 1;
                         foreach ($comp_masters as $itm)  {
-                ?>
+                    ?>
 
-                <div class="master-card ">
-                    <p class="master-done m_b_22 blue_color"><span class="master-count"><?echo $itm["rem_count"]?></span> ремонтов</p>
-                    <div class="master-text brad_12 gradient">
-                        <p class="master-name"><?echo $itm["name"]?></p>
-                        <p class="master-role"><?echo $itm["dolgnost"]?></p>
-                    </div>
-                    <div class="master-photo">
-                        <img src="<?php echo wp_get_attachment_image_src($itm["img"], 'full')[0];?>" alt="">
-                    </div>
+                        <div class="master-card swiper-slide">
+                            <div class="mt_wraper">
+                                <p class="master-done m_b_22 blue_color"><span class="master-count"><?echo $itm["rem_count"]?></span> ремонтов</p>
+                                <div class="master-text brad_12 gradient">
+                                    <p class="master-name"><?echo $itm["name"]?></p>
+                                    <p class="master-role"><?echo $itm["dolgnost"]?></p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="master-photo">
+                                <img src="<?php echo wp_get_attachment_image_src($itm["img"], 'full')[0];?>" alt="">
+                            </div>
+                        </div>
+
+                    <?
+                        }
+                    ?>
+                
                 </div>
 
-                <?
-                    }
-                ?>
-            
+                <div class="nb_wrapper">
+                    <div class="nav_btn nav_btn_next masters1-button-next"></div>
+                    <div class="nav_btn nav_btn_prev masters1-button-prev"></div>
+                </div>
             </div>
+
             
-            <div class="master-info d_flex m_b_40">
-                <div class="master-card">
-                    <p class="master-done m_b_22 blue_color"><span class="master-count">2625</span> ремонтов</p>
-                    <div class="master-text brad_12">
-                        <p class="master-name">Алексей<br>Михайлов</p>
-                        <p class="master-role">Мастер по ремонту<br>гаджетов</p>
-                    </div>
-                    <div class="master-photo"><img src="<?php echo get_template_directory_uri();?>/img/picture/manone.webp" alt=""></div>
+            <div id="master-info2" class="swiper master-info master-info2 d_flex m_b_40 ">
+                <div class="swiper-wrapper">
+                    <?php
+                        $i = 1;
+                        foreach ($bit_masters as $itm)  {
+                    ?>
+
+                        <div class="master-card swiper-slide">
+                            <div class="mt_wraper">
+                                <p class="master-done m_b_22 blue_color"><span class="master-count"><?echo $itm["rem_count"]?></span> ремонтов</p>
+                                <div class="master-text brad_12 gradient">
+                                    <p class="master-name"><?echo $itm["name"]?></p>
+                                    <p class="master-role"><?echo $itm["dolgnost"]?></p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="master-photo">
+                                <img src="<?php echo wp_get_attachment_image_src($itm["img"], 'full')[0];?>" alt="">
+                            </div>
+                        </div>
+
+                    <?
+                        }
+                    ?>
+                
                 </div>
 
-                <div class="master-card">
-                    <p class="master-done m_b_22 blue_color"><span class="master-count">1857</span> ремонтов</p>
-                    <div class="master-text brad_12">
-                        <p class="master-name">Юрий<br>Петров</p>
-                        <p class="master-role">Мастер по ремонту<br>гаджетов</p>
-                    </div>
-                    <div class="master-photo"><img src="<?php echo get_template_directory_uri();?>/img/picture/mantwo.webp" alt=""></div>
-                </div>
-
-                <div class="master-card">
-                    <p class="master-done m_b_22 blue_color"><span class="master-count">3241</span> ремонтов</p>
-                    <div class="master-text brad_12">
-                        <p class="master-name">Сергей<br>Грибакин</p>
-                        <p class="master-role">Мастер по ремонту<br>гаджетов</p>
-                    </div>
-                    <div class="master-photo"><img src="<?php echo get_template_directory_uri();?>/img/picture/manthree.webp" alt=""></div>
+                <div class="nb_wrapper">
+                    <div class="nav_btn nav_btn_next masters2-button-next"></div>
+                    <div class="nav_btn nav_btn_prev masters2-button-prev"></div>
                 </div>
             </div>
     </div>

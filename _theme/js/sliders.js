@@ -62,3 +62,54 @@ var swiper = new Swiper(".price_slider", {
   slidesPerGroup: 1,
   spaceBetween: 30,
 });
+
+
+var masters_1 = new Swiper(".master-info1", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop:true,
+
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+    },
+
+    1025: {
+      slidesPerView: 3,
+    },
+
+    512: {
+      slidesPerView: 2,
+    },
+  },
+
+  navigation: {
+      nextEl: ".masters1-button-next",
+      prevEl: ".masters1-button-prev",
+    },
+});
+
+var masters_2 = new Swiper(".master-info2", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop:true,
+
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+    },
+
+    1025: {
+      slidesPerView: 3,
+    },
+
+    512: {
+      slidesPerView: 2,
+    },
+  },
+
+  navigation: {
+      nextEl: ".masters2-button-next",
+      prevEl: ".masters2-button-prev",
+    },
+});
