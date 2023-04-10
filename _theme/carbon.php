@@ -80,7 +80,6 @@ function crb_attach_theme_options() {
 
     
     Container::make('post_meta', 'reviews_fild', 'Отзывы - поля для страницы')
-    // ->show_on_template(array('page-review.php'))
     ->where('post_template', '='. 'page-review.php')
     ->add_fields(array(
         Field::make('text', 'reviews_lnk', 'Ссылка на источник отзыва'),
@@ -90,7 +89,7 @@ function crb_attach_theme_options() {
 
 
     Container::make('post_meta', 'contacts_fild', 'Для контактов')
-    ->where( 'post_id', 'IN', array(13, 15) )
+    ->where('post_template', '='. 'page-contacts.php')
     ->add_fields(array(
         Field::make('text', 'reviews_lnk_1', 'Ссылка на источник отзыва11'),
         
@@ -98,8 +97,15 @@ function crb_attach_theme_options() {
     
     Container::make('post_meta', 'all_page_filds', 'Дополнительные поля для страниц и постов')
     ->add_fields(array(
-        Field::make('image', 'page_head_img', 'Фото в баннере страницы')
-        
+        Field::make('image', 'page_head_img', 'Фото в баннере страницы')->set_width(50),
+        Field::make( 'select', 'page_type', __( 'Тип страницы' ) )
+            ->set_options( array(
+                'Отзыв' => 'Отзыв',
+                'GEO' => 'GEO',
+                'Поломки' => 'Поломки',
+                'Портфолио' => 'Портфолио',
+                'Бренды' => 'Бренды',
+            ) )->set_width(50),
     ));
 
     

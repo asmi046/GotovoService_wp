@@ -6,7 +6,19 @@
             <div class="swiper-wrapper">
             
             <?
-                $reviews = new WP_Query( 'cat=3&posts_per_page=10' );
+
+                $args = [
+                    'posts_per_page' => 30,
+                    'meta_query' => [
+                        'relation' => 'OR',
+                        [
+                            'key' => 'page_type',
+                            'value' => 'Отзыв'
+                        ],
+                    ]
+                ];
+
+                $reviews = new WP_Query( $args );
             
             ?>
 

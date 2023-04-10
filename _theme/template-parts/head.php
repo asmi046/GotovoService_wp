@@ -1,4 +1,4 @@
-<header id="vue_app" >
+<header id="head_app" >
         <div class="_container">
             
             <a href="<? echo get_site_url();?>" class="logo"></a>

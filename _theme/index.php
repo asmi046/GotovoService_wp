@@ -1,8 +1,8 @@
 <?php get_header(); ?>  
 
+
     <?php get_template_part('template-parts/main-banner');?>
     <?php get_template_part('template-parts/main-services');?>
-    
     <?php get_template_part('template-parts/free-consultation');?>
     <?php get_template_part('template-parts/reviews-in-main');?>
     <?php get_template_part('template-parts/video-review-in-main');?>
@@ -19,6 +19,5 @@
     <?php get_template_part('template-parts/areas');?>
     <?php get_template_part('template-parts/questions-in-main');?>
     <?php get_template_part('template-parts/popular-questions');?>
-    
     
 <?php get_footer(); ?>

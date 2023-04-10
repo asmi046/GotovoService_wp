@@ -1,7 +1,12 @@
 import CitySelect from './components/city-select.js'
+import PolomkiMain from './components/polomki-main.js'
 
-const global_app = Vue.createApp({})
+const head_app = Vue.createApp({})
+head_app.component('city-select', CitySelect)
+head_app.mount("#head_app")
 
-global_app.component('city-select', CitySelect)
+const breakdowns_app = Vue.createApp({})
+breakdowns_app.component('polomki-main', PolomkiMain)
+breakdowns_app.mount("#breakdowns_app")
 
-global_app.mount("#vue_app")
+
