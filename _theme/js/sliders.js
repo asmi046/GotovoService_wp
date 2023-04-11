@@ -63,6 +63,12 @@ var swiper = new Swiper(".price_slider", {
   spaceBetween: 30,
 });
 
+var breakdowns_slider = new Swiper(".breakdowns_slider", {
+  slidesPerView: "auto",
+  slidesPerGroup: 1,
+  spaceBetween: 30,
+});
+
 
 var masters_1 = new Swiper(".master-info1", {
   slidesPerView: 1,

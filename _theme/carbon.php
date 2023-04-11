@@ -80,7 +80,7 @@ function crb_attach_theme_options() {
 
     
     Container::make('post_meta', 'reviews_fild', 'Отзывы - поля для страницы')
-    ->where('post_template', '='. 'page-review.php')
+    ->where('post_template', '=', 'page-review.php')
     ->add_fields(array(
         Field::make('text', 'reviews_lnk', 'Ссылка на источник отзыва'),
         
@@ -89,9 +89,18 @@ function crb_attach_theme_options() {
 
 
     Container::make('post_meta', 'contacts_fild', 'Для контактов')
-    ->where('post_template', '='. 'page-contacts.php')
+    ->where('post_template', '=', 'page-contacts.php')
     ->add_fields(array(
         Field::make('text', 'reviews_lnk_1', 'Ссылка на источник отзыва11'),
+        
+    ));
+
+    Container::make('post_meta', 'polomka_fild', 'Для страницы с поломками')
+    ->where('post_template', '=', 'page-polomka.php')
+    ->add_fields(array(
+        Field::make('text', 'polomka_priznak', 'Признак')->set_width(30),
+        Field::make('text', 'polomka_pr', 'Причина')->set_width(30),
+        Field::make('text', 'polomka_price', 'Цена от:')->set_width(30),
         
     ));
     
@@ -100,11 +109,13 @@ function crb_attach_theme_options() {
         Field::make('image', 'page_head_img', 'Фото в баннере страницы')->set_width(50),
         Field::make( 'select', 'page_type', __( 'Тип страницы' ) )
             ->set_options( array(
+                'Без типа' => 'Без типа',
                 'Отзыв' => 'Отзыв',
                 'GEO' => 'GEO',
                 'Поломки' => 'Поломки',
                 'Портфолио' => 'Портфолио',
                 'Бренды' => 'Бренды',
+                
             ) )->set_width(50),
     ));
 

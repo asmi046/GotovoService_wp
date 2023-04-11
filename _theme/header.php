@@ -15,6 +15,16 @@
 
     <?php wp_head();?>
 </head>
+
+<?
+    global $all_categories;
+    $all_categories = get_categories( [
+	    'taxonomy'     => 'category',
+	    'type'         => 'post',
+        'exclude' => 1
+    ]);
+?>
+
     <body>
          <?php get_template_part('template-parts/city-select');?>
 

@@ -190,6 +190,10 @@ section h3 {
     position: absolute;
 }
 
+.no_sel {
+    user-select:none
+}
+
 /* тени */
 
 .shadow {

@@ -27,8 +27,10 @@
                     while ( $reviews->have_posts() ){
                         $reviews->the_post();
                         get_template_part('template-parts/reviews-card');
-                        wp_reset_postdata();
+                        
                     }
+
+                    wp_reset_postdata();
                 ?>
             </div>
             <div class="nb_wrapper">

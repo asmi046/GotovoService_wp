@@ -1,9 +1,16 @@
 .breakdowns-swiper .swiper-slide {
     width: auto;
 }
+
 .breakdowns .services {
-column-gap: 31px;
+    column-gap: 31px;
+    display: none;
 }
+
+.breakdowns .services.active { 
+    display: flex;
+}
+
 .breakdowns-card {
     flex: 1;
     border: 1px solid grey;

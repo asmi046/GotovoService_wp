@@ -9,9 +9,9 @@ if ($comp_masters) {
             <div class="d_flex f_col m_b_40">
                 <div class="m_b_22">
                     <div class="d_flex">
-                            <a data-masterbox="master-info1" class="masters_selector white_bg  brad_12 select_btn active" href="#">Ремонт компьютерной техники</a>
+                            <a data-boxid="master-info1" data-boxgroup="master-info" class="uni_selector white_bg  brad_12 select_btn active" href="#">Ремонт компьютерной техники</a>
                             <?if ($bit_masters) {?>
-                                <a data-masterbox="master-info2" class="masters_selector white_bg  brad_12 select_btn" href="#">Ремонт компьютерной техники</a>
+                                <a data-boxid="master-info2" data-boxgroup="master-info" class="uni_selector white_bg  brad_12 select_btn" href="#">Ремонт компьютерной техники</a>
                             <?}?>
                     </div>
                 </div>

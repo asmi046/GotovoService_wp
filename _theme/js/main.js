@@ -1,22 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => { 
-    const masters_selector = document.querySelectorAll(".masters_selector")
+    const uni_selector = document.querySelectorAll(".uni_selector")
 
 
 
-    for (let i = 0; i < masters_selector.length; i++) { 
-        masters_selector[i].addEventListener("click", function (e) {
+    for (let i = 0; i < uni_selector.length; i++) { 
+        uni_selector[i].addEventListener("click", function (e) {
 
             e.preventDefault()
-            let box_id = masters_selector[i].dataset.masterbox
+            let box_id = uni_selector[i].dataset.boxid
+            let box_group_selector = uni_selector[i].dataset.boxgroup
 
-            for (let i = 0; i < masters_selector.length; i++)
-                masters_selector[i].classList.remove("active")
+            for (let i = 0; i < uni_selector.length; i++)
+                uni_selector[i].classList.remove("active")
 
-            masters_selector[i].classList.toggle("active")
+            uni_selector[i].classList.toggle("active")
 
-            const master_info = document.querySelectorAll(".master-info")
-            for (let i = 0; i < master_info.length; i++)
-                master_info[i].classList.remove("active")
+            const group_info = document.querySelectorAll("."+box_group_selector)
+            for (let i = 0; i < group_info.length; i++)
+                group_info[i].classList.remove("active")
 
             document.getElementById(box_id).classList.toggle("active")
         })
