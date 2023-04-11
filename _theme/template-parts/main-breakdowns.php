@@ -4,6 +4,8 @@
         
         <div class="d_flex f_col m_b_40">
                 <div class="selector ower_scroll d_flex m_b_40">
+                    <div class="side_gradient"></div>
+
                     <div class="swiper breakdowns_slider">
                         <div class="swiper-wrapper breakdowns-swiper">
                             <?php 
@@ -21,7 +23,7 @@
 
                 <?
                 $i = 0;
-                foreach( $all_categories as $cat ) { 
+                    foreach( $all_categories as $cat ) { 
                         $c_post = new WP_Query( ['cat' => $cat->term_id, 'posts_per_page' => 4, 
                         'meta_query' => [
                             'relation' => 'OR',
@@ -38,7 +40,7 @@
                                 $c_post->the_post();
                         ?>
                             <div class="breakdowns-card brad_12 <">
-                                <p class="breakdowns-title white_color"><? the_title(); ?></p>
+                                <p class="breakdowns-title white_color gradient"><? the_title(); ?></p>
                                 <div class="breakdowns-text white_bg">
                                 <p class="breakdowns-sign">Признак: <? echo carbon_get_the_post_meta('polomka_priznak')?></p>
                                 <p class="breakdowns-cause">Причина: <?echo carbon_get_the_post_meta('polomka_pr')?></p>

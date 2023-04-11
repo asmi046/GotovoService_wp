@@ -26,7 +26,7 @@ if ($comp_masters) {
 
                         <div class="master-card swiper-slide">
                             <div class="mt_wraper">
-                                <p class="master-done m_b_22 blue_color"><span class="master-count"><?echo $itm["rem_count"]?></span> ремонтов</p>
+                                <p class="master-done m_b_10 blue_color"><span class="master-count"><?echo $itm["rem_count"]?></span> ремонтов</p>
                                 <div class="master-text brad_12 gradient">
                                     <p class="master-name"><?echo $itm["name"]?></p>
                                     <p class="master-role"><?echo $itm["dolgnost"]?></p>

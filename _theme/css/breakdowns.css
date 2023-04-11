@@ -14,16 +14,19 @@
 .breakdowns-card {
     flex: 1;
     border: 1px solid grey;
+    overflow: hidden;
   
 }
 .breakdowns-card p {
     padding-left:  44px;
-    padding-right: 71px;
+    padding-right: 44px;
+    
 }
 .breakdowns-title {
     font-size: 24px;
     padding: 16px 0 16px 0;
-    background: linear-gradient(to left bottom, #214578, #55A9E0);
+    line-height: 1.2;
+    
 }
 .breakdowns-text {
     margin: 20px 0 40px 0

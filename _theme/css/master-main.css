@@ -39,6 +39,7 @@
 .master-count {
     margin-right: 10px;
     font-size: 48px;
+    font-weight: bold;
 }
 
 .master-name {

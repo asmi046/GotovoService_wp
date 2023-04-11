@@ -1,5 +1,15 @@
 .selector {
     min-width: 100%;
+    position: relative;
+}
+
+.selector .side_gradient{ 
+    width:40px;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to left, #ffffff , #ffffff00);;
+    z-index: 1000;
+    right:0;
 }
 
 .select_btn {
