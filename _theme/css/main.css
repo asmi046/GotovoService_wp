@@ -554,9 +554,11 @@ textarea {
 }
 
 .map_counter_wrapper {
+    width:310px;
     bottom: -10px;
-    left:calc(50% - 120px);
+    left:calc(50% - 155px);
     display: flex;
+    justify-content: center;
 }
 
 .map_counter {
