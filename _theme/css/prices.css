@@ -22,3 +22,37 @@
 .prices .swiper-slide{
     width: auto;
 }
+
+.service_elem span {
+    font-size: 22px;
+    position: relative;
+    padding-left: 30px;
+
+}
+
+.service_elem span::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icons/price_red.svg);
+}
+
+.service_elem h3 {
+    font-size: 24px;
+}
+
+.service_elem {
+    width:49%;
+}
+
+.price-info {
+    display: none;
+}
+
+.price-info.active {
+    display: flex;
+}
+

@@ -1,50 +1,69 @@
 <section class="main__portfolio">
-    <div class="_container gray_bg brad_12 m_b_40">
-        <h2>Портфолио</h2>
-            <div class="d_flex f_col m_b_40">
-                <div class="m_b_22">
-                    <div class="d_flex jc_sb f_gap_10">
-                            <a class="white_bg  brad_12 select_btn" href="#">Ремонт ноутбуков</a>
-                            <a class="white_bg  brad_12 select_btn active" href="#">Ремонт компьютеров</a>
-                            <a class="white_bg  brad_12 select_btn" href="#">Ремонт телефонов</a>
-                            <a class="white_bg  brad_12 select_btn" href="#">Ремонт холодильников</a>
-                    </div>
-                </div>
-            </div>
+    <div class="_container brad_12 m_b_40 pad_50_40">
+        <h2 class="m_t_0">Портфолио</h2>
+            <div class="selector  d_flex m_b_40">
+                    <div class="side_gradient_gray"></div>
 
-            <div class="portfolio-application d_flex jc_sb f_gap_10">
-                <div class="application d_flex f_col">
-                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka1.webp" alt="Заявка1">
-                    <div class="application-info">
-                    <p class="application-identifier">Заявка 358756</p>
-                    <p class="application-cause">Причина: Утечка хладогента</p>
-                    <p class="application-made">Что было сделано: Заправка фреоном</p>
-                    <p class="application-time pos_rel">Время: 45 минут</p>
-                    <p class="application-price pos_rel">Цена: <span>7650 Р</span></p>
+                    <div class="swiper portfolio_slider">
+                        <div class="swiper-wrapper breakdowns-swiper">
+                            <?php 
+                            global $all_categories;
+                            $i = 0;
+                            foreach( $all_categories as $cat ){ ?>    
+                                <a data-boxid="portfolio-info<?echo $cat->term_id?>" data-boxgroup="portfolio-info"  class="swiper-slide white_bg brad_12 select_btn no_sel uni_selector <? echo ($i == 0)?"active":""; ?>" href="#"><? echo $cat->name; ?></a>
+                            <?
+                            $i++;
+                        }?>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="application d_flex f_col">
-                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka3.webp" alt="Заявка1">
-                    <div class="application-info">
-                    <p class="application-identifier">Заявка 358756</p>
-                    <p class="application-cause">Причина: Утечка хладогента</p>
-                    <p class="application-made">Что было сделано: Заправка фреоном</p>
-                    <p class="application-time pos_rel">Время: 45 минут</p>
-                    <p class="application-price pos_rel">Цена: <span>7650 Р</span></p>
-                    </div>
+                <?
+                    $i = 0;
+                    foreach( $all_categories as $cat ) { 
+                        $c_post = new WP_Query( ['cat' => $cat->term_id, 'posts_per_page' => 3, 
+                        'meta_query' => [
+                            'relation' => 'OR',
+                            [
+                                'key' => 'page_type',
+                                'value' => 'Портфолио'
+                            ],
+                        ]
+                    ]); 
+                ?>  
+            
+
+                <div id="portfolio-info<?echo $cat->term_id?>" class="portfolio-info portfolio-application d_flex jc_sb f_gap_10 <? echo ($i == 0)?"active":""; ?>">
+                    <? 
+                        while( $c_post->have_posts() ){
+                            $c_post->the_post();
+                    ?>
+
+                        <div   class=" application d_flex f_col">
+                            <div class="img_wrapper">
+                                <img src="<?php echo wp_get_attachment_image_src(carbon_get_the_post_meta('portfolio_img'), 'large')[0];?>" alt="Заявка1">
+                            </div>
+
+                            <div class="application-info">
+                                <p class="application-identifier">Заявка <? echo carbon_get_the_post_meta('portfolio_znumber')?></p>
+                                <p class="application-cause">Причина: <? echo carbon_get_the_post_meta('portfolio_pr')?></p>
+                                <p class="application-made">Что было сделано: <? echo carbon_get_the_post_meta('portfolio_work')?></p>
+                                <p class="application-time pos_rel">Время: <? echo carbon_get_the_post_meta('portfolio_time')?></p>
+                                <p class="application-price pos_rel">Цена: <span><? echo carbon_get_the_post_meta('portfolio_price')?> Р</span></p>
+                            </div>
+                        </div>
+                    
+                    <?}
+                            
+                            wp_reset_postdata();
+                    ?>
+                   
                 </div>
 
-                <div class="application d_flex f_col">
-                    <img src="<?php echo get_template_directory_uri();?>/img/picture/zayavka2.webp" alt="Заявка1">
-                    <div class="application-info">
-                    <p class="application-identifier">Заявка 358756</p>
-                    <p class="application-cause">Причина: Утечка хладогента</p>
-                    <p class="application-made">Что было сделано: Заправка фреоном</p>
-                    <p class="application-time pos_rel">Время: 45 минут</p>
-                    <p class="application-price pos_rel">Цена: <span>7650 Р</span></p>
-                    </div>
-                </div>
-            </div>
+            <?
+                    $i++;
+                }
+            ?>   
     </div>
 </section>

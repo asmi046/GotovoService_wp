@@ -1,5 +1,16 @@
+
+
 .main__portfolio ._container {
-    padding: 21px 72px 50px 72px;
+    background-color: #D2D1D1;
+}
+
+.selector .side_gradient_gray{ 
+    width:40px;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to left, #D2D1D1 , #D2D1D100);;
+    z-index: 1000;
+    right:0;
 }
 
 .application-info {
@@ -21,6 +32,16 @@
     background-color: #FFFFFF;
 
     border-radius: 12px;
+    overflow: hidden;
+}
+
+.application .img_wrapper{ 
+    height: 200px;
+    overflow: hidden;
+}
+
+.application .img_wrapper img{ 
+    object-fit: contain;
 }
 
 .application-identifier {
@@ -48,6 +69,14 @@
     display: block;
     top: 2px;
     left: -23px;
+}
+
+.portfolio-application.active {
+    display:flex;
+}
+
+.portfolio-application {
+    display: none;
 }
 
 @media (max-width: 1024px) { 

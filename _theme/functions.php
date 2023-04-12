@@ -11,6 +11,111 @@ add_theme_support('post-thumbnails');
 set_post_thumbnail_size(300, 300);
 add_post_type_support('page', 'excerpt');
 
+global $wpdb;
+
+$all_price_table = $wpdb->get_results("SELECT * FROM `all_prices`");
+
+if	(empty($all_price_table)) {
+	$all_field = [
+		[
+			"category" => "Ремонт компютеров",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка компютера #1",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт компютеров",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка компютера #2",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт компютеров",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка компютера #3",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт компютеров",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка компютера #4",
+			"price" => rand(500, 3500),
+		],
+		
+		[
+			"category" => "Ремонт ноутбуков",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка ноутбука #1",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт ноутбуков",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка ноутбука #2",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт ноутбуков",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка ноутбука #3",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт ноутбуков",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка ноутбука #4",
+			"price" => rand(500, 3500),
+		],
+
+		[
+			"category" => "Ремонт посудомоек",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка посудомоек #1",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт посудомоек",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка посудомоек #2",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт посудомоек",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка посудомоек #3",
+			"price" => rand(500, 3500),
+		],
+		[
+			"category" => "Ремонт посудомоек",
+			"polomka" => "",
+			"brand" => "",
+			"name" => "Поломка посудомоек #4",
+			"price" => rand(500, 3500),
+		],
+	];
+
+	$wpdb->show_errors(); // включит показ ошибок
+	// var_dump($all_field);
+
+	foreach ($all_field as $item)
+		$wpdb->insert("all_prices", $item);
+
+	
+	$wpdb->hide_errors(); // выключит показ ошибок
+	$wpdb->print_error(); // включит показ ошибок на экран
+}
+
 // Подключение стилей и nonce для Ajax и скриптов во фронтенд 
 add_action('wp_enqueue_scripts', 'my_assets');
 function my_assets()
@@ -50,6 +155,7 @@ function my_assets()
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), $all_version, true);
 	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $all_version, true);
 	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), $all_version, true);
+	wp_enqueue_script('map-vz-js', get_template_directory_uri() . '/js/map-vz.js', array(), $all_version, true);
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), $all_version, true);
 	
 	

@@ -14,7 +14,6 @@
     <?php get_template_part('template-parts/portfolio');?>
     <?php get_template_part('template-parts/prices');?>
     <?php get_template_part('template-parts/map-in-main');?>
-    <?php get_template_part('template-parts/map-in-main');?>
     <?php get_template_part('template-parts/areas');?>
     <?php get_template_part('template-parts/questions-in-main');?>
     <?php get_template_part('template-parts/popular-questions');?>

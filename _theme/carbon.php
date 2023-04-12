@@ -103,6 +103,18 @@ function crb_attach_theme_options() {
         Field::make('text', 'polomka_price', 'Цена от:')->set_width(30),
         
     ));
+
+    Container::make('post_meta', 'portfolio_fild', 'Для страницы с поломками')
+    ->where('post_template', '=', 'page-portfolio.php')
+    ->add_fields(array(
+        Field::make('image', 'portfolio_img', 'Фото блока'),
+        Field::make('text', 'portfolio_znumber', 'Номер заявки')->set_width(100),
+        Field::make('text', 'portfolio_pr', 'Причина')->set_width(100),
+        Field::make('text', 'portfolio_work', 'Что было сделано')->set_width(100),
+        Field::make('text', 'portfolio_time', 'Время выполнения')->set_width(100),
+        Field::make('text', 'portfolio_price', 'цена')->set_width(100),
+        
+    ));
     
     Container::make('post_meta', 'all_page_filds', 'Дополнительные поля для страниц и постов')
     ->add_fields(array(
