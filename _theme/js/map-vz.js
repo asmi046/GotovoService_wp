@@ -7,25 +7,22 @@ function init_vz () {
         // Масштаб карты
         zoom: 9,
         // Выключаем все управление картой
-        controls: []
+        controls: ['zoomControl']
     });
 
     var myGeoObjects = [];
 
-    // Указываем координаты метки
-    myGeoObjects = new ymaps.Placemark([55.75283228476672,37.62071970898438],{
-                                        hintContent: '<div class="map-hint">Агрокомплекс «Мансурово»</div>',
-                                        balloonContent: '<div class="map-hint"></div>',
-                                    }
-                                    ,{
-                                        iconLayout: 'default#image',
-                    // Путь до нашей картинки
-                    iconImageHref: '/img/icons/map-pin-fill.svg',
-                    // Размеры иконки
-                    iconImageSize: [62, 60],
-                    // Смещение верхнего угла относительно основания иконки
-                    iconImageOffset: [-31, -45]
-                });
+    if (all_pers != null)
+    for (let i=0; i<all_pers.length; i++) {
+        myGeoObjects.push(new ymaps.Placemark(all_pers[i].geo.split(',') ,{
+            hintContent: '<div class="map-hint"><strong>Мастер:</strong> '+all_pers[i].name+' <br/> <strong>Адрес:</strong> '+all_pers[i].adress+' </div>',
+            balloonContent: '<div class="map-hint"><strong>Мастер:</strong> '+all_pers[i].name+' <br/> <strong>Адрес:</strong> '+all_pers[i].adress+' </div>',
+        })
+        )
+
+    }
+        
+        
 
     var clusterer = new ymaps.Clusterer({
         clusterDisableClickZoom: false,
