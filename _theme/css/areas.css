@@ -9,6 +9,12 @@
     cursor: pointer;
 }
 
+.areas-tab__item a:hover,
+.areas-tab__item a.active {
+    color: white;
+    background-color: #214578;
+}
+
 .areas-tab__item a {
     padding: 10px;
     background-color: #E8E8E8;
@@ -51,18 +57,106 @@
     margin-bottom: 10px;
 }
 
-.areas-tab__item-img {
+.metro_line:hover,
+.metro_line.active {
+    background-color: #E8E8E8;
+}
+
+.metro_line {
+    width:65px;
+    height:43px;
     margin-right: 35px;
     margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:1px solid #D2D1D1
 }
 
-.areas-tab__item-img a {
-    text-decoration: none;
+
+.raion-info.active {
+     display: block;
 }
 
-.areas-tab__item-img a img {
-    border-radius: 10px;
+.raion-info {
+     display: none;
 }
+
+.arbatsko-pokrovskaya {
+    background-image: url(../img/icons/icon-metro/arbatsko-pokrovskaya.svg);
+}
+
+.bolshaya-koltsevaya {
+    background-image: url(../img/icons/icon-metro/bolshaya-koltsevaya.svg);
+}
+
+.butovskaya {
+    background-image: url(../img/icons/icon-metro/butovskaya.svg);
+}
+
+.d_1 {
+    background-image: url(../img/icons/icon-metro/d_1.svg);
+}
+
+.d_2 {
+    background-image: url(../img/icons/icon-metro/d_2.svg);
+}
+
+.filevskaya {
+    background-image: url(../img/icons/icon-metro/filevskaya.svg);
+}
+
+.kaluzhsko-rizhskaya {
+    background-image: url(../img/icons/icon-metro/kaluzhsko-rizhskaya.svg);
+}
+
+.koltsevaya {
+    background-image: url(../img/icons/icon-metro/koltsevaya.svg);
+}
+
+.lublinsko-dmitrovskaya {
+    background-image: url(../img/icons/icon-metro/lublinsko-dmitrovskaya.svg);
+}
+
+.nekrasovskaya {
+    background-image: url(../img/icons/icon-metro/nekrasovskaya.svg);
+}
+
+.serpuho-timiryazevskaya {
+    background-image: url(../img/icons/icon-metro/serpuho-timiryazevskaya.svg);
+}
+
+.sokolnicheskaya {
+    background-image: url(../img/icons/icon-metro/sokolnicheskaya.svg);
+}
+
+.tagansko-krasnopresnenskaya {
+    background-image: url(../img/icons/icon-metro/tagansko-krasnopresnenskaya.svg);
+}
+
+.zamoskvorec {
+    background-image: url(../img/icons/icon-metro/zamoskvorec.svg);
+}
+
+.kalininsko-sontsevskaya {
+    background-image: url(../img/icons/icon-metro/kalininsko-sontsevskaya.svg);
+}
+
+.kalininsko-sontsevskaya {
+    background-image: url(../img/icons/icon-metro/kalininsko-sontsevskaya.svg);
+}
+
+.mtsk {
+    background-image: url(../img/icons/icon-metro/mtsk.svg);
+}
+
+.kahovskaya {
+    background-image: url(../img/icons/icon-metro/kahovskaya.svg);
+}
+
+.monorels {
+    background-image: url(../img/icons/icon-metro/monorels.svg);
+}
+
 
 @media (max-width: 1024px) { 
     .areas-districts__group {
