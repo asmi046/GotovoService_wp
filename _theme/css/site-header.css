@@ -18,7 +18,7 @@ header ._container{
     width: 137px;
 }
 
-header .city_time *{
+header .city_time > *{
     margin: auto auto auto 0;
     position: relative;
     padding-left: 20px;

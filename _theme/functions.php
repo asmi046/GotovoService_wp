@@ -107,6 +107,27 @@ function get_cat_geo()
 			] ;
 		}
 
+		$css_metro = [
+			"Арбатско-Покровская линия" => "arbatsko-pokrovskaya",
+            "Большая кольцевая линия" =>  "bolshaya-koltsevaya" ,
+            "Бутовская линия" => "butovskaya" ,
+            "Калининско-Солнцевская линия" => "kalininsko-sontsevskaya",
+            "Замоскворецкая линия" => "zamoskvorec",
+            "Калужско-Рижская линия" => "kaluzhsko-rizhskaya",
+            "Каховская линия" => "kahovskaya",
+            "Кольцевая линия" =>  "koltsevaya",
+            "Люблинско-Дмитровская линия" => "lublinsko-dmitrovskaya",
+            "Московская монорельсовая транспортная система" => "monorels",
+            "Московское центральное кольцо" => "mtsk",
+            "МЦД-1 Лобня — Одинцово" => "d_1",
+            "МЦД-2 Нахабино — Подольск" => "d_2",
+            "Некрасовская линия" => "nekrasovskaya",
+            "Серпуховско-Тимирязевская линия" => "serpuho-timiryazevskaya",
+            "Сокольническая линия" => "sokolnicheskaya",
+            "Таганско-Краснопресненская линия" => "tagansko-krasnopresnenskaya",
+            "Филёвская линия" => "filevskaya"
+		];
+
 		$c_post = new WP_Query( [
 			'cat' => $catid,
 			
@@ -130,7 +151,8 @@ function get_cat_geo()
 				"title" => $item->post_title, 
 				"lnk" => get_permalink($item->ID), 
 				"vetka" => $geo_vetka, 
-				"stateion" => $metro_name, 
+				"stateion" => $metro_name,
+				"cssclass" => $css_metro[$item->post_title] 
 			] ;
 		}
 

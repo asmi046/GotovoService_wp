@@ -24,6 +24,7 @@
 }
 
 .areas-districts__group {
+    width:100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: var(--gap);
@@ -81,78 +82,92 @@
      display: none;
 }
 
+.metro_line[data-metrostatename="Арбатско-Покровская линия"],
 .arbatsko-pokrovskaya {
     background-image: url(../img/icons/icon-metro/arbatsko-pokrovskaya.svg);
 }
 
+.metro_line[data-metrostatename="Большая кольцевая линия"],
 .bolshaya-koltsevaya {
     background-image: url(../img/icons/icon-metro/bolshaya-koltsevaya.svg);
 }
 
+.metro_line[data-metrostatename="Бутовская линия"],
 .butovskaya {
     background-image: url(../img/icons/icon-metro/butovskaya.svg);
 }
 
+.metro_line[data-metrostatename="МЦД-1 Лобня — Одинцово"],
 .d_1 {
     background-image: url(../img/icons/icon-metro/d_1.svg);
 }
 
+.metro_line[data-metrostatename="МЦД-2 Нахабино — Подольск"],
 .d_2 {
     background-image: url(../img/icons/icon-metro/d_2.svg);
 }
 
+.metro_line[data-metrostatename="Филёвская линия"],
 .filevskaya {
     background-image: url(../img/icons/icon-metro/filevskaya.svg);
 }
 
+.metro_line[data-metrostatename="Калужско-Рижская линия"],
 .kaluzhsko-rizhskaya {
     background-image: url(../img/icons/icon-metro/kaluzhsko-rizhskaya.svg);
 }
 
+.metro_line[data-metrostatename="Кольцевая линия"],
 .koltsevaya {
     background-image: url(../img/icons/icon-metro/koltsevaya.svg);
 }
 
+.metro_line[data-metrostatename="Люблинско-Дмитровская линия"],
 .lublinsko-dmitrovskaya {
     background-image: url(../img/icons/icon-metro/lublinsko-dmitrovskaya.svg);
 }
 
+.metro_line[data-metrostatename="Некрасовская линия"],
 .nekrasovskaya {
     background-image: url(../img/icons/icon-metro/nekrasovskaya.svg);
 }
 
+.metro_line[data-metrostatename="Серпуховско-Тимирязевская линия"],
 .serpuho-timiryazevskaya {
     background-image: url(../img/icons/icon-metro/serpuho-timiryazevskaya.svg);
 }
 
+.metro_line[data-metrostatename="Сокольническая линия"],
 .sokolnicheskaya {
     background-image: url(../img/icons/icon-metro/sokolnicheskaya.svg);
 }
 
+.metro_line[data-metrostatename="Таганско-Краснопресненская линия"],
 .tagansko-krasnopresnenskaya {
     background-image: url(../img/icons/icon-metro/tagansko-krasnopresnenskaya.svg);
 }
 
+.metro_line[data-metrostatename="Замоскворецкая линия"],
 .zamoskvorec {
     background-image: url(../img/icons/icon-metro/zamoskvorec.svg);
 }
 
+.metro_line[data-metrostatename="Калининско-Солнцевская линия"],
 .kalininsko-sontsevskaya {
     background-image: url(../img/icons/icon-metro/kalininsko-sontsevskaya.svg);
 }
 
-.kalininsko-sontsevskaya {
-    background-image: url(../img/icons/icon-metro/kalininsko-sontsevskaya.svg);
-}
-
+.metro_line[data-metrostatename="Московское центральное кольцо"],
 .mtsk {
     background-image: url(../img/icons/icon-metro/mtsk.svg);
 }
 
+.metro_line[data-metrostatename="Каховская линия"],
 .kahovskaya {
     background-image: url(../img/icons/icon-metro/kahovskaya.svg);
 }
 
+.metro_line[data-metrostatename="Московская монорельсовая транспортная система"],
 .monorels {
     background-image: url(../img/icons/icon-metro/monorels.svg);
 }

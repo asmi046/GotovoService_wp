@@ -503,6 +503,7 @@ textarea {
     position: relative;
 }
 
+.city_list,
 .menu li ul{
     display: none;
     position: absolute;
@@ -516,11 +517,17 @@ textarea {
     overflow: hidden;
 }
 
+.city_list.active {
+    display: flex;
+}
+
+.city_list a,
 .menu li ul li a{ 
     padding: 5px 10px;
     width: 100%;
     margin-left: 0;
 }
+
 
 .menu li:hover > a{
     color:#214578;
@@ -528,6 +535,7 @@ textarea {
 
 } 
 
+.city_list a:hover,
 .menu li ul li a:hover{ 
     background-color: #214578;
     color: white;
