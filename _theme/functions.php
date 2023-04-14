@@ -51,6 +51,7 @@ function my_assets()
 	wp_enqueue_script('sender-js', get_template_directory_uri() . '/js/sender.js', array(), $all_version, true);
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), $all_version, true);
 	wp_enqueue_script('sliders-js', get_template_directory_uri() . '/js/sliders.js', array(), $all_version, true);
+	wp_enqueue_script('axios-js', get_template_directory_uri() . '/js/axios.min.js', array(), $all_version, true);
 	wp_enqueue_script('vue-js', get_template_directory_uri() . '/js/vue.global.js', array(), $all_version, true);
 	wp_enqueue_script('map-vz-js', get_template_directory_uri() . '/js/map-vz.js', array(), $all_version, true);
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), $all_version, true);
@@ -64,16 +65,79 @@ function my_assets()
 }
 
 // Заготовка для вызова ajax
-add_action('wp_ajax_aj_fnc', 'aj_fnc');
-add_action('wp_ajax_nopriv_aj_fnc', 'aj_fnc');
+add_action('wp_ajax_get_cat_geo', 'get_cat_geo');
+add_action('wp_ajax_nopriv_get_cat_geo', 'get_cat_geo');
 
-function aj_fnc()
+function get_cat_geo()
 {
 	if (empty($_REQUEST['nonce'])) {
 		wp_die('0');
 	}
 
 	if (check_ajax_referer('NEHERTUTLAZIT', 'nonce', false)) {
+
+		$catid = $_REQUEST["catid"];
+
+		if (empty($catid)) wp_die(json_encode([]));
+
+		$c_post = new WP_Query( [
+				'cat' => $catid,
+				
+                        'meta_query' => [
+                            'relation' => 'OR',
+                            [
+                                'key' => 'page_type',
+                                'value' => 'GEO'
+                            ],
+                        ]
+        ]); 
+
+		$ao = [];
+
+		foreach($c_post->posts as $item)
+		{
+			$geo_ao = carbon_get_post_meta($item->ID, "geo_ao");
+			$geo_raion = carbon_get_post_meta($item->ID, "geo_raion");
+
+			$ao[$geo_ao][mb_substr($geo_raion, 0,1,)][] = [
+				"title" => $item->post_title, 
+				"lnk" => get_permalink($item->ID), 
+				"ao" => $geo_ao, 
+				"raion" => $geo_raion, 
+			] ;
+		}
+
+		$c_post = new WP_Query( [
+			'cat' => $catid,
+			
+					'meta_query' => [
+						'relation' => 'OR',
+						[
+							'key' => 'page_type',
+							'value' => 'Станция метро'
+						],
+					]
+		]); 
+
+		$metro = [];
+
+		foreach($c_post->posts as $item)
+		{
+			$geo_vetka = carbon_get_post_meta($item->ID, "geo_vetka");
+			$metro_name = carbon_get_post_meta($item->ID, "metro_name");
+
+			$metro[$geo_vetka][mb_substr($metro_name, 0,1,)][] = [
+				"title" => $item->post_title, 
+				"lnk" => get_permalink($item->ID), 
+				"vetka" => $geo_vetka, 
+				"stateion" => $metro_name, 
+			] ;
+		}
+
+
+
+		wp_die(json_encode(["catid" => $catid, "ao"=> $ao, "metro" => $metro]));
+
 	} else {
 		wp_die('НО-НО-НО!', '', 403);
 	}

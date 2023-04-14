@@ -16,7 +16,7 @@ function init_vz () {
     for (let i=0; i<all_pers.length; i++) {
         myGeoObjects.push(new ymaps.Placemark(all_pers[i].geo.split(',') ,{
             hintContent: '<div class="map-hint"><strong>Мастер:</strong> '+all_pers[i].name+' <br/> <strong>Адрес:</strong> '+all_pers[i].adress+' </div>',
-            balloonContent: '<div class="map-hint"><strong>Мастер:</strong> '+all_pers[i].name+' <br/> <strong>Адрес:</strong> '+all_pers[i].adress+' </div>',
+            balloonContent: '<div class="map-hint"></div>',
         })
         )
 

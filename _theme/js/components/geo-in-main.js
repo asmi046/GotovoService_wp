@@ -26,6 +26,12 @@ export default {
             "СЗАО",
         ]
 
+        let selected_ao = Vue.ref("ЮАО")
+
+        function setSelectedAo(value){
+            selected_ao.value = value
+        }
+
         const vetki = [
             {name: "Арбатско-Покровская линия", class: "arbatsko-pokrovskaya" },
             {name: "Большая кольцевая линия", class: "bolshaya-koltsevaya" },
@@ -47,9 +53,38 @@ export default {
             {name: "Филёвская линия", class: "filevskaya" }
         ]
 
-        const catid = props.catid
+        let selected_vetka = Vue.ref("Арбатско-Покровская линия")
         
-        return {ao, vetki, catid}
+        function setSelectedVetka(value){
+            selected_vetka.value = value
+        }
+
+        const catid = props.catid
+
+        var main_data = Vue.ref([])
+
+        
+
+        // Vue.onMounted(() => {
+            var formData = new FormData();
+            formData.append('action', "get_cat_geo");
+            formData.append('nonce', allAjax.nonce);
+            formData.append('catid', catid);
+
+
+            axios.post(allAjax.ajaxurl, formData)
+                .then(function (response) {
+                    main_data.value = response.data
+                    console.log(response.data)
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        // })
+        
+        return {ao, vetki, selected_vetka, selected_ao, main_data, setSelectedAo, setSelectedVetka}
     },
+
+    
 
 }

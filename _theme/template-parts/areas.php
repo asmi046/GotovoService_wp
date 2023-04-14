@@ -2,22 +2,23 @@
         <div>
             <h3>Выберите район</h3>
             <ul class="areas-tab__tabs d_flex f_wrap">
-                <li v-for="(item, index) in ao" :key="index" class="areas-tab__item d_flex"><a href="#">{{item}} {{catid}}</a></li>
+                <li @click.prevent="setSelectedAo(name)" v-for="( value, name) in main_data.ao" :key="name"  class="areas-tab__item d_flex"><a :class="{active:name == selected_ao}" href="#">{{name}}</a></li>
             </ul>
 
-            <div class="areas-districts__group">
+            <div v-for="(value, name) in main_data.ao" :key="'ao_'+name" class="areas-districts__group">
                 
-                <div class="districts__group">
-                    <div data-letter="А" class="districts__group-item">
-                        <a href="#">Академический</a>
+                <div v-if="name == selected_ao" class="districts__group">
+                    <div v-for="(value_s, name_s) in value" :key="name_s" :data-letter="name_s" class="districts__group-item">
+                        <a v-for="(raion, index) in value_s" :key="'r_'+index" href="#">{{raion.raion}}</a>
                     </div>
                 </div>
 
             </div>
 
+            <!-- 
             <h3>Выберите станцию метро</h3>
             <ul class="areas-tab__tabs d_flex f_wrap">
-                <li v-for="(item, index) in vetki" :key="index" :class="[item.class]" class="metro_line border_lg brad_12 d_flex"></li>
+                <li @click.prevent="setSelectedVetka(item.name)" v-for="(item, index) in vetki" :key="index" :class="[{active:item.name == selected_vetka}, item.class]" class="metro_line border_lg brad_12 d_flex"></li>
             </ul>
 
             <div class="areas-districts__group">
@@ -28,7 +29,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </template>
 
