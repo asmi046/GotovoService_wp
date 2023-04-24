@@ -2,28 +2,8 @@
     <div class="_container">
         <h2>Популярные вопросы</h2>
         <div class="d_flex">   
-            <div class="f_1 faq">
-                
-                <?php
-                    $pop_q = carbon_get_theme_option('faq');
-                    $i = 1;
-					foreach ($pop_q as $pq)  {
-                ?>
 
-                <details>
-                    <summary><?echo $pq["q"]; ?></summary>
-                    <div class="response">
-                        <?echo $pq["r"]; ?>
-                    </div>
-                </details>
-
-                <?
-                    }
-                ?>
-                
-
-                <a href="#" class="btn btn_full">Получить консультацию</a>
-            </div>
+            <?php get_template_part('template-parts/faq-input-blk');?>
 
             <div class="f_1 d_flex pos_rel">
                 <div class="circle gray_bg pos_abs"></div>

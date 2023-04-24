@@ -82,7 +82,9 @@ function crb_attach_theme_options() {
     Container::make('post_meta', 'reviews_fild', 'Отзывы - поля для страницы')
     ->where('post_template', '=', 'page-review.php')
     ->add_fields(array(
-        Field::make('text', 'reviews_lnk', 'Ссылка на источник отзыва'),
+        Field::make('text', 'reviews_name', 'Имя оставившего отзыв')->set_width(30),
+        Field::make('text', 'reviews_reiting', 'Оценка')->set_width(30),
+        Field::make('text', 'reviews_z_number', 'Номер заявки')->set_width(30),
         
     ));
 

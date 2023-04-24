@@ -8,15 +8,28 @@
     position: absolute;
 }
 
-.bnr_menu .bnr_menu_punct:hover .sub_menu { 
-    display: block;
-}
+
 
 .bnr_menu .bnr_menu_punct .sub_menu .sub_menu_puncts { 
     background-color: white;
     border-radius: 12px;
     min-height: 100px;
+    justify-content: space-between;
+    overflow: hidden;
 }
+
+.bnr_menu .bnr_menu_punct .sub_menu .sub_menu_puncts a:hover {
+    color: #214578;
+    background-color: white;
+    text-decoration: underline;
+    
+} 
+
+.bnr_menu .bnr_menu_punct .sub_menu .sub_menu_puncts a { 
+    width:23%;
+    text-align: left;
+}
+
 
 .bnr_menu .bnr_menu_punct .sub_menu { 
     display: none;
@@ -25,7 +38,10 @@
     top:100%;
     left:0;
     padding-top: 10px;
+}
 
+.bnr_menu .bnr_menu_punct:hover .sub_menu { 
+    display: block;
 }
 
 .bnr_menu  .bnr_menu_punct{

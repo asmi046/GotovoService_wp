@@ -25,6 +25,7 @@ function my_assets()
 	wp_enqueue_style("null-css", get_template_directory_uri() . "/css/null.css", array(), $all_version, 'all'); 
 	wp_enqueue_style("swiper-css", get_template_directory_uri() . "/css/swiper-bundle.min.css", array(), null, 'all'); 
 	wp_enqueue_style("fonts-css", get_template_directory_uri() . "/css/fonts.css", array(), $all_version, 'all'); 
+	wp_enqueue_style("modal-win-css", get_template_directory_uri() . "/css/modal-win.css", array(), $all_version, 'all'); 
 	wp_enqueue_style("main-css", get_template_directory_uri() . "/css/main.css", array(), $all_version, 'all'); 
 	wp_enqueue_style("site-header-css", get_template_directory_uri() . "/css/site-header.css", array(), $all_version, 'all'); 
 	wp_enqueue_style("main-banner-css", get_template_directory_uri() . "/css/main-banner.css", array(), $all_version, 'all');

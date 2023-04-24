@@ -196,6 +196,10 @@ section h3 {
     border: 1px solid #D2D1D145;
 }
 
+.border_bl_full {
+    border: 1px solid #214578;
+}
+
 /* position */
 
 .pos_rel {
@@ -583,3 +587,16 @@ textarea {
 
 /* Карта вызовов end */
 
+/* Оформление скрола */
+
+::-webkit-scrollbar {
+    overflow-y: scroll;
+    width: 7px;
+    background-color: #f9f9fd;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+  }
+
+/* Оформление скрола end */

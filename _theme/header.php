@@ -28,6 +28,7 @@
 ?>
 
     <body>
+         <?php get_template_part('template-parts/modal-win');?>
          <?php get_template_part('template-parts/city-select');?>
 
         <?php get_template_part('template-parts/head');?>

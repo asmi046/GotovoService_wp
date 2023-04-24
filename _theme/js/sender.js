@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     body: formData
                     }).then(res => console.log(res)).then(res => {
                         console.log(res)
+                        document.location.href="/thencs";
                     }).catch(error => console.log(error))	
                 
             }
