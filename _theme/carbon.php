@@ -12,6 +12,8 @@ function crb_attach_theme_options() {
             Field::make( 'text', 'ogrn', 'ОГРН' )->set_width(100),
             Field::make( 'text', 'email', 'e-mail' )->set_width(100),
             Field::make( 'text', 'adress', 'Адрес' )->set_width(100),
+            Field::make( 'text', 'adress_ur', 'Адрес юридический' )->set_width(100),
+            Field::make( 'text', 'worck_day', 'Дни работы' )->set_width(100),
             Field::make( 'text', 'worck_time', 'Время работы' )->set_width(100),
             Field::make( 'text', 'phone', 'Телефон для связи' )->set_width(100),
             Field::make( 'text', 'email_send', 'Почта для отправки' )->set_width(100),
@@ -85,6 +87,8 @@ function crb_attach_theme_options() {
         Field::make('text', 'reviews_name', 'Имя оставившего отзыв')->set_width(30),
         Field::make('text', 'reviews_reiting', 'Оценка')->set_width(30),
         Field::make('text', 'reviews_z_number', 'Номер заявки')->set_width(30),
+
+
         
     ));
 
@@ -93,7 +97,14 @@ function crb_attach_theme_options() {
     Container::make('post_meta', 'contacts_fild', 'Для контактов')
     ->where('post_template', '=', 'page-contacts.php')
     ->add_fields(array(
-        Field::make('text', 'reviews_lnk_1', 'Ссылка на источник отзыва11'),
+        Field::make('complex', 'reviews_service_centers', 'Сервисные центры')
+        ->add_fields(array(
+            Field::make('text', 'adres', 'Адрес сервиса')
+                ->set_width(50),
+            Field::make('textarea', 'map', 'Фрейм карты')
+                ->set_width(50),
+
+        ))
         
     ));
 

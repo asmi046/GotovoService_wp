@@ -46,7 +46,7 @@
         </div>
     </template>
 
-<section class="areas-main">
+<section class="areas-main m_b_40">
     <div class="_container" >
         <h2>Районы обслуживания</h2>
 

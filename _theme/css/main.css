@@ -214,6 +214,11 @@ section h3 {
     user-select:none
 }
 
+.w_auto {
+    width:auto;
+}
+
+
 /* тени */
 
 .shadow {
@@ -600,3 +605,32 @@ textarea {
   }
 
 /* Оформление скрола end */
+
+/* Страница контактов */
+
+.contact_page_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_page_list li{
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contact_page_list li span{ 
+    font-weight: 600;
+}
+
+.service_centers-info {
+    display: none;
+}
+
+.service_centers-info.active{
+    display: block;
+}
+
+/* Страница контактов end */

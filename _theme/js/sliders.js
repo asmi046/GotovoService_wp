@@ -81,6 +81,12 @@ var breakdowns_slider = new Swiper(".raion_slider", {
   spaceBetween: 30,
 });
 
+var service_centers_slider = new Swiper(".service_centers_slider", {
+  slidesPerView: "auto",
+  slidesPerGroup: 1,
+  spaceBetween: 30,
+});
+
 
 var masters_1 = new Swiper(".master-info1", {
   slidesPerView: 1,
