@@ -128,6 +128,28 @@ function crb_attach_theme_options() {
         Field::make('text', 'portfolio_price', 'цена')->set_width(100),
         
     ));
+
+    Container::make('post_meta', 'teach_fild', 'Для страницы обучение мастеров')
+    ->where('post_template', '=', 'page-teach.php')
+    ->add_fields(array(
+        Field::make('text', 'teach_number_b1', 'Номер (Блок 1)')->set_width(30),
+        Field::make('text', 'teach_title_b1', 'Заголовок (Блок 1)')->set_width(30),
+        Field::make('rich_text', 'teach_puncts_b1', 'Пункты (Блок 1)')->set_width(30),
+        
+        Field::make('text', 'teach_number_b2', 'Номер (Блок 2)')->set_width(30),
+        Field::make('text', 'teach_title_b2', 'Заголовок (Блок 2)')->set_width(30),
+        Field::make('rich_text', 'teach_puncts_b2', 'Пункты (Блок 2)')->set_width(30),
+        
+        Field::make('text', 'teach_number_b3', 'Номер (Блок 3)')->set_width(30),
+        Field::make('text', 'teach_title_b3', 'Заголовок (Блок 3)')->set_width(30),
+        Field::make('rich_text', 'teach_puncts_b3', 'Пункты (Блок 3)')->set_width(30),
+        
+        Field::make('rich_text', 'teach_all_docs', 'Документы, которые вы получите')->set_width(100),
+
+        Field::make('image', 'teach_sert_1', 'Сертификат №1'),
+
+        Field::make('image', 'teach_sert_2', 'Сертификат №2'),
+    ));
     
     Container::make('post_meta', 'all_page_filds', 'Дополнительные поля для страниц и постов')
     ->add_fields(array(

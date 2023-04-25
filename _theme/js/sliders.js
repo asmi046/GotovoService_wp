@@ -39,7 +39,7 @@ var v_rew = new Swiper(".video_reviews_slider", {
 
   breakpoints: {
     1920: {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
 
     1025: {
@@ -57,35 +57,21 @@ var v_rew = new Swiper(".video_reviews_slider", {
     },
 });
 
-var swiper = new Swiper(".price_slider", {
+const select_slider = {
   slidesPerView: "auto",
   slidesPerGroup: 1,
   spaceBetween: 30,
-});
+}
 
-var breakdowns_slider = new Swiper(".breakdowns_slider", {
-  slidesPerView: "auto",
-  slidesPerGroup: 1,
-  spaceBetween: 30,
-});
+var swiper = new Swiper(".price_slider", select_slider);
 
-var breakdowns_slider = new Swiper(".portfolio_slider", {
-  slidesPerView: "auto",
-  slidesPerGroup: 1,
-  spaceBetween: 30,
-});
+var breakdowns_slider = new Swiper(".breakdowns_slider", select_slider);
 
-var breakdowns_slider = new Swiper(".raion_slider", {
-  slidesPerView: "auto",
-  slidesPerGroup: 1,
-  spaceBetween: 30,
-});
+var breakdowns_slider = new Swiper(".portfolio_slider", select_slider);
 
-var service_centers_slider = new Swiper(".service_centers_slider", {
-  slidesPerView: "auto",
-  slidesPerGroup: 1,
-  spaceBetween: 30,
-});
+var breakdowns_slider = new Swiper(".raion_slider", select_slider);
+
+var service_centers_slider = new Swiper(".service_centers_slider", select_slider);
 
 
 var masters_1 = new Swiper(".master-info1", {

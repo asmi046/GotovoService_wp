@@ -3,33 +3,28 @@
 
         <div class="swiper main_slider">
                 <div class="swiper-wrapper">
-                        <div class="swiper-slide main_slide">
-                            <img src="<?php echo get_template_directory_uri();?>/img/tmp/bn_1.jpg" alt="">
-                            <div class="muar"></div>
-                            <div class="bnr_info">
-                                <h1>Профессиональный и качественный ремонт ноутбуков</h1>
-                                <ul>
-                                        <li>Обслуживаем технику с 1995 года</li>
-                                        <li>Весь спектр бытовых услуг</li>
-                                        <li>Работа с официальными брендами</li>
-                                </ul>
-                                <a href="#recollMsg" class="btn">Вызвать мастера</a>
-                            </div>    
-                        
-                        </div>
-                        <div class="swiper-slide main_slide">
-                                <img src="<?php echo get_template_directory_uri();?>/img/tmp/bn_1.jpg" alt="">
-                                <div class="muar"></div>
-                                <div class="bnr_info">
-                                        <p class="ak_h1">Профессиональный и качественный ремонт ноутбуков</p>
-                                        <ul>
-                                                <li>Обслуживаем технику с 1995 года</li>
-                                                <li>Весь спектр бытовых услуг</li>
-                                                <li>Работа с официальными брендами</li>
-                                        </ul>
-                                        <a href="#recollMsg" class="btn">Вызвать мастера</a>
+                        <?
+                                $main_slider = carbon_get_theme_option('main_slider');
+                        ?>
+                
+
+                   <?php
+                        $i = 1;
+                        foreach ($main_slider as $item)  {
+                    ?>
+                                <div class="swiper-slide main_slide">
+                                        <img src="<?php echo wp_get_attachment_image_src($item["img"], 'full')[0];?>" alt="<? echo $item["title"]; ?>">
+                                        <div class="muar"></div>
+                                        <div class="bnr_info">
+                                                <h1><? echo $item["title"]; ?></h1>
+                                                <? echo apply_filters('the_content', $item["subtext"]); ?>
+                                                <a href="<? echo $item["link"]; ?>" class="btn">Вызвать мастера</a>
+                                        </div>    
+                                
                                 </div>
-                        </div>
+                        <?
+                        }
+                        ?>
                 </div>  
                 <div class="navi_btn">
                         <div class="nav_btn nav_btn_next main_swiper-button-next"></div>
