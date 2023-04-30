@@ -13,6 +13,48 @@ add_post_type_support('page', 'excerpt');
 
 include "seed.php";
 
+// ---- Генерация меню
+
+function get_array_struct_menu($services_menu) {
+	$menu_combine = [];
+	foreach ($services_menu as $item) {
+		if ($item->menu_item_parent == 0) {
+			$menu_combine[$item->db_id] = [
+				"id" => $item->db_id,
+				"menu_order" => $item->menu_order,
+				"lnk" => $item->url,
+				"title" => $item->title,
+				"subpuncts" => [],
+				"show_sub" => false
+			];
+		}
+	}
+
+	foreach ($services_menu as $item) {
+		if ($item->menu_item_parent != 0) {
+			$menu_combine[$item->menu_item_parent]["subpuncts"][] =  $item;
+		}
+	}
+
+	$result = [];
+
+	foreach($menu_combine as $item) {
+		$result[$item["menu_order"]] = $item;
+	}
+
+
+	return $result;
+}
+
+global $menu_combine;
+$services_menu = wp_get_nav_menu_items( 11 );
+$main_menu = wp_get_nav_menu_items( 2 );
+$menu_combine = get_array_struct_menu($services_menu);
+$main_menu_combine = get_array_struct_menu($main_menu);
+
+// ---- Генерация меню end
+
+
 // Подключение стилей и nonce для Ajax и скриптов во фронтенд 
 add_action('wp_enqueue_scripts', 'my_assets');
 function my_assets()
@@ -43,6 +85,7 @@ function my_assets()
 	wp_enqueue_style("popular-questions", get_template_directory_uri() . "/css/popular-questions.css", array(), $all_version, 'all');
 	wp_enqueue_style("portfolio-css", get_template_directory_uri() . "/css/portfolio.css", array(), $all_version, 'all');
 	wp_enqueue_style("prices", get_template_directory_uri() . "/css/prices.css", array(), $all_version, 'all');
+	wp_enqueue_style("mobile_menu", get_template_directory_uri() . "/css/mobile-menu.css", array(), $all_version, 'all');
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $all_version, 'all');
 
 	// Подключение скриптов
@@ -65,7 +108,28 @@ function my_assets()
 	));
 }
 
-// Заготовка для вызова ajax
+add_action('wp_ajax_get_services_menu', 'get_services_menu');
+add_action('wp_ajax_nopriv_get_services_menu', 'get_services_menu');
+
+function get_services_menu()
+{
+	if (empty($_REQUEST['nonce'])) {
+		wp_die('0');
+	}
+
+	if (check_ajax_referer('NEHERTUTLAZIT', 'nonce', false)) {
+		
+		global $menu_combine;
+		global $main_menu_combine;
+		wp_die(json_encode(["services_menu" => $menu_combine, "main_menu" => $main_menu_combine]));
+
+	} else {
+		wp_die('НО-НО-НО!', '', 403);
+	}
+
+}
+
+
 add_action('wp_ajax_get_cat_geo', 'get_cat_geo');
 add_action('wp_ajax_nopriv_get_cat_geo', 'get_cat_geo');
 

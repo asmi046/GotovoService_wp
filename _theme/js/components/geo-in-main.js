@@ -36,14 +36,11 @@ export default {
         axios.post(allAjax.ajaxurl, formData)
             .then(function (response) {
                 main_data.value = response.data
-                // if (main_data.value.ao != undefined) console.log(main_data.value.ao.get())
                 selected_ao.value = (Object.keys(main_data.value.ao).length != 0)?Object.keys(main_data.value.ao)[0]:"" 
                 selected_vetka.value = (Object.keys(main_data.value.metro).length != 0)?Object.keys(main_data.value.metro)[0]:"" 
                 
                 is_empty.value = ((selected_ao.value == "") && (selected_vetka.value == ""))
 
-                console.log(selected_ao)
-                console.log(response.data)
             })
             .catch(function (error) {
                 console.log(error);

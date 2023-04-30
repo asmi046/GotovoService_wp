@@ -23,12 +23,16 @@
     $all_categories = get_categories( [
 	    'taxonomy'     => 'category',
 	    'type'         => 'post',
-        'exclude' => 1
+        'exclude' => 1,
     ]);
 ?>
 
     <body>
-         <?php get_template_part('template-parts/modal-win');?>
-         <?php get_template_part('template-parts/city-select');?>
+
+
+        <?php get_template_part('template-parts/modal-win');?>
+        <?php get_template_part('template-parts/city-select');?>
+         
+        <?php get_template_part('template-parts/mobile-menu');?>
 
         <?php get_template_part('template-parts/head');?>

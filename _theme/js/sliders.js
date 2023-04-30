@@ -38,7 +38,7 @@ var v_rew = new Swiper(".video_reviews_slider", {
   loop:true,
 
   breakpoints: {
-    1920: {
+    1440: {
       slidesPerView: 5,
     },
 
