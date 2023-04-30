@@ -77,3 +77,14 @@
         display: none;
     }
 }
+
+@media (max-width: 1024px) {  
+    .education-info {
+        font-size: 22px;
+    }
+
+    .education-info span {
+        font-size: 66px;
+        line-height: 0.8;
+    }
+}
