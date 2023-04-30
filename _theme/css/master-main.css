@@ -63,9 +63,6 @@
 }
 
 @media (max-width: 1024px) { 
-    .master-photo {
-        top: 78px;
-    }
     .master-done {
         margin-bottom: 0;
     }

@@ -59,9 +59,9 @@
                 ?>      
                 
 
-                <div class="swiper-wrapper swiper-footer m_b_40">   
+                <!-- <div class="swiper-wrapper swiper-footer m_b_40">   
                     <a class="swiper-slide gray_bg brad_12 select_btn active" href="#"><span>Смотреть все поломки</span></a>
-                </div>
+                </div> -->
 
         </div>
 

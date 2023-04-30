@@ -27,7 +27,7 @@
 
             <div class="education-documents d_flex m_b_40 jc_sb f_wrap">
                 <div class="documents-title">
-                    <h2>Документы,<br>которые вы получите</h2>
+                    <h2>Документы, <br>которые вы получите</h2>
                     <div class="documents-icons"></div>
                     <? echo  apply_filters('the_content', carbon_get_post_meta(225, "teach_all_docs")); ?>
                 </div>

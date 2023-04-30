@@ -4,9 +4,10 @@
 }
 .quality {
     width: 50%;
+    margin: 10px 0;
 }
 .quality-text {
-    margin-top: 33px;
+    margin-top: 10px;
     margin-left: 15px;
 }
 .whyar-img {
