@@ -67,6 +67,10 @@
     line-height: 1.2;
 }
 
+.education-image img { 
+    width:48%;
+}
+
 @media (max-width: 1024px) {  
     .documents-title {
         width:100%;
@@ -76,9 +80,7 @@
     .documents-title h2 br{
         display: none;
     }
-}
 
-@media (max-width: 1024px) {  
     .education-info {
         font-size: 22px;
     }
@@ -86,5 +88,12 @@
     .education-info span {
         font-size: 66px;
         line-height: 0.8;
+    }
+}
+
+@media (max-width: 512px) { 
+    .education-image img {
+        width: 100%;
+        margin: 5px 0;
     }
 }

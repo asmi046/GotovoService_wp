@@ -90,3 +90,13 @@ margin-bottom: 10px;
         padding-right: 14px;
     }
 }
+
+@media (max-width: 512px) { 
+    .breakdowns .services {
+        flex-direction: column;
+    }
+
+    .breakdowns-card {
+        margin-bottom: 20px;
+    }
+}

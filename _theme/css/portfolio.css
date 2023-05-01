@@ -92,3 +92,9 @@
         width:48%;
     }
 }
+
+@media (max-width: 512px) { 
+    .portfolio-application{
+        flex-direction: column;
+    }
+}

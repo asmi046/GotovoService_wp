@@ -34,13 +34,13 @@
                 ?>  
             
 
-                <div id="portfolio-info<?echo $cat->term_id?>" class="portfolio-info portfolio-application d_flex jc_sb f_gap_10 <? echo ($i == 0)?"active":""; ?>">
+                <div id="portfolio-info<?echo $cat->term_id?>" class="portfolio-info portfolio-application d_flex jc_sb f_gap_20 <? echo ($i == 0)?"active":""; ?>">
                     <? 
                         while( $c_post->have_posts() ){
                             $c_post->the_post();
                     ?>
 
-                        <div   class=" application d_flex f_col">
+                        <div   class=" application d_flex f_col f_1">
                             <div class="img_wrapper">
                                 <img src="<?php echo wp_get_attachment_image_src(carbon_get_the_post_meta('portfolio_img'), 'large')[0];?>" alt="Заявка1">
                             </div>

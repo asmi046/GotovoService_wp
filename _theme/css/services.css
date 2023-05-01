@@ -148,6 +148,20 @@
     .bnr_info {
         width: 96%;
     }
+
+    .computer_services_img {
+        transform: scale(-1, 1);
+        right: -80px;
+    }
+
+    .nout_services_img {
+        right: -70px;
+    }
+
+    .usl_blk ul { 
+        width:70%;
+    }
 }
+
 
 /* Услуги на главной end */

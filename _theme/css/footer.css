@@ -50,6 +50,10 @@ footer, footer a {
     .logo_footer {
         margin-right: 40px;
     }
+
+    footer {
+        padding-bottom: 90px;
+    }
 }
 
 @media (max-width: 512px) { 

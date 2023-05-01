@@ -56,3 +56,9 @@
     display: flex;
 }
 
+@media (max-width: 512px) { 
+    .service_elem {
+        width:100%;
+    }
+    
+}

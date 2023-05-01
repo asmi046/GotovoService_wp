@@ -637,4 +637,36 @@ textarea {
     display: block;
 }
 
+@media (max-width: 1024px) { 
+
+    .contact_page ._container > div {
+        flex-direction: column;
+    }
+
+
+    .contacts_row {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 512px) { 
+    .contact_page_list li span {
+        max-width: 60%;
+        text-align: right;
+    }
+}
+
 /* Страница контактов end */
+
+@media (max-width: 512px) {
+    .q_form {
+        flex-wrap: wrap;
+    }
+    .q_form_elem {
+        width:100%;
+        flex: unset;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

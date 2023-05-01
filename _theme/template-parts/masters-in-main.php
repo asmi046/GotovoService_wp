@@ -8,7 +8,7 @@ if ($comp_masters) {
         <h2>Наши мастера</h2>
             <div class="d_flex f_col m_b_40">
                 <div class="m_b_22">
-                    <div class="d_flex">
+                    <div class="master_type_chenge d_flex">
                             <a data-boxid="master-info1" data-boxgroup="master-info" class="uni_selector white_bg  brad_12 select_btn active" href="#">Ремонт компьютерной техники</a>
                             <?if ($bit_masters) {?>
                                 <a data-boxid="master-info2" data-boxgroup="master-info" class="uni_selector white_bg  brad_12 select_btn" href="#">Ремонт компьютерной техники</a>

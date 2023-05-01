@@ -11,8 +11,8 @@ get_header(); ?>
 
 <section class="all_page_content_section contact_page pad_50">
     <div class="_container">
-        <div class="d_flex jc_sb">
-            <div class="f_1 m_r_30">
+        <div class=" d_flex jc_sb">
+            <div class="contacts_row f_1 m_r_30">
                 <h2>Связаться с нами</h2> 
                 <ul class="contact_page_list">
                     <li>Оставить заявку: <span><? echo carbon_get_theme_option('phone'); ?></span></li>
@@ -22,7 +22,7 @@ get_header(); ?>
                 </ul>             
             </div>
             
-            <div class="f_1">
+            <div class="contacts_row f_1">
                 <h2>Реквизиты организации</h2> 
                 
                 <ul class="contact_page_list">

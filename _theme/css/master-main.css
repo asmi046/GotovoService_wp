@@ -66,4 +66,24 @@
     .master-done {
         margin-bottom: 0;
     }
+    
+ }
+
+@media (max-width: 512px) { 
+    .master_type_chenge {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .master_type_chenge .uni_selector{ 
+        margin: 5px 0;
+    }
+    
+    .master-photo {
+        max-width: 200px;
+    }
+
+    .master-card {
+        min-height: 300px;
+    }
  }
