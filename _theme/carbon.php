@@ -77,7 +77,12 @@ function crb_attach_theme_options() {
     Container::make( 'term_meta', __( 'Дополнительные поля для категорий', 'crb' ) )
     ->where( 'term_taxonomy', '=', 'category' ) // only show our new field for categories
     ->add_fields( array(
-        Field::make('image', 'page_head_img', 'Фото в баннере страницы')
+        Field::make('image', 'page_head_img', 'Фото в баннере страницы'),
+        Field::make('text', 'cat_price_ot', 'Цена от:'),
+        Field::make('text', 'cat_subtitle', 'Подзаголовок'),
+        Field::make('text', 'cat_btn_lnk', 'Ссылка для кнопки'),
+        Field::make('rich_text', 'cat_list', 'Список'),
+        Field::make('textarea', 'cat_prices', 'Цены на странице (шорткод)'),
     ) );
 
     

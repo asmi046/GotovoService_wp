@@ -11,7 +11,7 @@
                 <div class="error_list_wrap">
                     <div v-for="(item, index) in errorList" :key="index" class="error">{{item}}</div>
                 </div>
-                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a href="/policy">политикой конфиденциальности</a></p>
+                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a href="/privacy-policy">политикой конфиденциальности</a></p>
                 <div class="control_wrap">
                     <button class="btn" @click.prevent="sendMsg()">Отправить</button> <div v-show="showLoader" class="loader"></div>
                 </div>
@@ -23,5 +23,6 @@
 
 <div id="win_app">
     <modal-win rout="/send_consult" redirect="/thencs" hesh="recollMsg" title="Заказать обратный звонок" subtitle="Наши специалисты свяжутся с Вами в течении 15 минут" ></modal-win>
+    <modal-win rout="/send_consult" redirect="/thencs" hesh="masterMsg" title="Вызов мастера на дом" subtitle="Наши специалисты свяжутся с Вами в течении 15 минут" ></modal-win>
 
 </div>

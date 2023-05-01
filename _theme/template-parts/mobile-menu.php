@@ -56,9 +56,9 @@
                 <span>Услуги</span>
             </div>
             
-            <div class="f_1 d_flex mob_top_punkts m_zayavka">
+            <a href="#masterMsg" class="f_1 d_flex mob_top_punkts m_zayavka">
                 <span>Заявка</span>
-            </div>
+            </a>
             
             <div @click.prevent="menu_show = !menu_show"  :class="{active:menu_show}" class="f_1 d_flex mob_top_punkts m_menu">
                 <span>Меню</span>

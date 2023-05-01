@@ -20,7 +20,7 @@
     margin: auto;
     border-radius: 11px;
     position:relative;
-    padding: 40px;
+    padding: 50px 30px;
 }
 
 .popup__close {
@@ -45,7 +45,7 @@
 }
 
 .sending_form .control_wrap button{
-    width:50%;
+    width:100%;
 }
 
 .sending_form .control_wrap {
@@ -103,7 +103,8 @@
     }
 
     .modal_h2 {
-        font-size: 42px;
+        font-size: 28px;
+        padding-bottom: 20px;
     }
 }
 

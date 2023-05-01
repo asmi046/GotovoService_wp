@@ -241,6 +241,12 @@ section h3 {
     text-decoration: none;
 }
 
+.gradient_revers {
+    background: linear-gradient(to left bottom, #55A9E0, #214578);
+    color: white;
+    text-decoration: none;
+}
+
 .breakdowns-card {
     flex: 1;
     border: 1px solid grey;
@@ -287,6 +293,15 @@ textarea {
         width:98%;
         margin-left: 1%;
         margin-right: 1%;
+    }
+}
+
+
+@media (max-width: 512px) { 
+    ._container{ 
+        width:94%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
 
@@ -364,6 +379,11 @@ textarea {
     margin-bottom: 20px;
 }
 
+.rub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
 @media (max-width: 1024px) { 
     .free_consultation ._container {
         flex-direction: column;
@@ -407,66 +427,7 @@ textarea {
 
 /* отзывы end */
 
-/* Баннер страницы */
 
-
-.page_head .page_head_img{ 
-    width:250px;
-    bottom: 0;
-    left: calc((100% / 2) + 480px);
-    z-index: 0;
-}
-
-.page_head #breadcrumbs{
-    padding: 30px 0;
-}
-
-.page_head #breadcrumbs a{
-    color:white;
-    display: inline-block;
-}
-
-.page_head {
-    padding: 30px 0;
-}
-
-
-.page_head .bnr_menu{
-    position: relative;
-    top:unset;
-    left:unset;
-}
-
-@media (max-width: 1480px) {
-    .page_head .page_head_img {
-        right: 1%;
-        left: unset;
-    }
-}
-
-@media (max-width: 1080px) {
-    
-.page_head #breadcrumbs{
-    padding: 0 0 30px 0;
-}
-}
-
-@media (max-width: 768px) {
-    .page_head .page_head_img {
-        width:130px;
-    }
-
-    .page_head h1 {
-        font-size: 32px;
-        z-index: 1000;
-    }
-
-    .page_head #breadcrumbs{ 
-        z-index: 1000; 
-    }
-}
-
-/* Баннер страницы end */
 
 /* Оформление текстового контента*/
 

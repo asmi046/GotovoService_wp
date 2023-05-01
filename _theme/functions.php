@@ -86,6 +86,7 @@ function my_assets()
 	wp_enqueue_style("portfolio-css", get_template_directory_uri() . "/css/portfolio.css", array(), $all_version, 'all');
 	wp_enqueue_style("prices", get_template_directory_uri() . "/css/prices.css", array(), $all_version, 'all');
 	wp_enqueue_style("mobile_menu", get_template_directory_uri() . "/css/mobile-menu.css", array(), $all_version, 'all');
+	wp_enqueue_style("page_banner", get_template_directory_uri() . "/css/page-banner.css", array(), $all_version, 'all');
 	wp_enqueue_style("main-style", get_stylesheet_uri(), array(), $all_version, 'all');
 
 	// Подключение скриптов

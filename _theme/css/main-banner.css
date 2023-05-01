@@ -19,7 +19,7 @@
 }
 
 .bnr_menu .bnr_menu_punct .sub_menu .sub_menu_puncts a:hover {
-    color: #214578;
+    color: #DE213C;
     background-color: white;
     text-decoration: underline;
     
@@ -73,8 +73,9 @@
     line-height: 1;
 }
 
-.bnr_menu  .bnr_menu_punct a:hover{ 
-    background-color: #214578; 
+.bnr_menu  .bnr_menu_punct:hover > a{ 
+    background-color: #DE213C; 
+    /* background-color: #214578;  */
     text-decoration: none;
     color:white
 }

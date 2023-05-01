@@ -12,7 +12,7 @@
                          <div class="sub_menu_puncts d_flex f_wrap">
                          <? foreach ($value["subpuncts"] as $itemSub) {
                          ?>
-                              <a href="#"><span><? echo $itemSub->title?></span></a>
+                              <a href="<? echo $itemSub->url?>"><span><? echo $itemSub->title?></span></a>
                          <? 
                               }
                          ?>

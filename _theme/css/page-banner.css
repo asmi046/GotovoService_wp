@@ -1,0 +1,123 @@
+
+/* Баннер страницы */
+
+
+.page_head .page_head_img{ 
+    width:250px;
+    bottom: 0;
+    left: calc((100% / 2) + 480px);
+    z-index: 0;
+}
+
+.page_head #breadcrumbs{
+    padding: 30px 0;
+}
+
+.page_head #breadcrumbs a{
+    color:white;
+    display: inline-block;
+}
+
+.page_head {
+    padding: 30px 0;
+}
+
+.page_head .bnr_menu{
+    position: relative;
+    top:unset;
+    left:unset;
+}
+
+@media (max-width: 1480px) {
+    .page_head .page_head_img {
+        right: 1%;
+        left: unset;
+    }
+}
+
+@media (max-width: 1080px) {
+    
+.page_head #breadcrumbs{
+    padding: 0 0 30px 0;
+}
+}
+
+@media (max-width: 768px) {
+    .page_head .page_head_img {
+        width:130px;
+    }
+
+    .page_head h1 {
+        font-size: 32px;
+        z-index: 1000;
+    }
+
+    .page_head #breadcrumbs{ 
+        z-index: 1000; 
+    }
+}
+
+/* Баннер страницы end */
+
+/* Баннер страницы большой*/
+
+.page_head_big_cat {
+    background-color: #214578;
+    color: white;
+}
+
+
+.banner_content h1{
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.banner_content h1 span{
+    color: rgb(238, 63, 88);
+ }
+
+ .bb_subtitle {
+    font-size: 22px;
+ }
+
+ .banner_content .time::before{
+    content: "";
+    width:30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/icons/24hours.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top:calc(50% - 15px)
+}
+
+ .banner_content .time{
+    font-size: 22px;
+    padding-left: 45px;
+    position: relative;
+ }
+
+ .banner_content .time strong{
+    color: rgb(238, 63, 88)
+ }
+
+ .banner_content .right {
+    display: flex;
+ }
+
+ .banner_content .right img{
+    width: 70%;
+    margin-top: auto;
+    margin-left: auto;
+ }
+
+/* Баннер страницы большой end*/
+
+@media (max-width: 512px) {
+    .banner_content .right {
+        display: none;
+    }
+    
+}
