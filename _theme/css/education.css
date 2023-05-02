@@ -97,3 +97,17 @@
         margin: 5px 0;
     }
 }
+
+@media (max-width: 375px) { 
+    .education-info span {
+        margin-right: 15px;
+    }
+
+    .education-info {
+        font-size: 18px;
+    }
+
+    .education-info span {
+        font-size: 52px;
+    }
+}

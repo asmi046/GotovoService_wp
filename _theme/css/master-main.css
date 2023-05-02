@@ -86,4 +86,12 @@
     .master-card {
         min-height: 300px;
     }
+
+    .master-done {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .master-count { 
+        font-size: 32px;
+    }
  }

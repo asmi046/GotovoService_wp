@@ -206,5 +206,15 @@
     }
 }
 
+@media (max-width: 375px) {  
+    .navi_btn {
+        bottom: 0;
+    }
+
+    .main_slider .swiper-wrapper {
+        padding-bottom: 60px;
+    }
+}
+
 
 /* Баннер на главной end */

@@ -10,25 +10,25 @@
                 <p class="cooperation-number number-line">
                     <span>1</span>
                 </p>
-                <p">Минута требуется<br>для оформления<br>заявки</p>
+                <p class="cooperation-text">Минута требуется<br>для оформления<br>заявки</p>
             </div>
             <div class="f_col d_flex r_gap">
                 <p class="cooperation-number number-line">
                     <span>5</span>
                 </p>
-                <p>Минут нужно<br>для выезда<br>мастера</p>
+                <p class="cooperation-text">Минут нужно<br>для выезда<br>мастера</p>
             </div>
             <div class="f_col d_flex r_gap">
                 <p class="cooperation-number number-line">
                     <span>60</span>
                 </p>
-                <p>Минут нужно<br>мастеру, чтобы<br>добраться до вас</p>
+                <p class="cooperation-text">Минут нужно<br>мастеру, чтобы<br>добраться до вас</p>
             </div>
             <div class="f_col d_flex r_gap">
                 <p class="cooperation-number number-line">
                     <span>30</span>
                 </p>
-                <p>Минут в среднем<br>требуется<br>на ремонт</p>
+                <p class="cooperation-text">Минут в среднем<br>требуется<br>на ремонт</p>
             </div>
         </div>
     </div>

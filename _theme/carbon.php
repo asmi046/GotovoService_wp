@@ -82,7 +82,8 @@ function crb_attach_theme_options() {
         Field::make('text', 'cat_subtitle', 'Подзаголовок'),
         Field::make('text', 'cat_btn_lnk', 'Ссылка для кнопки'),
         Field::make('rich_text', 'cat_list', 'Список'),
-        Field::make('textarea', 'cat_prices', 'Цены на странице (шорткод)'),
+        Field::make('text', 'prices_category', 'Категория цен'),
+        Field::make('text', 'prices_polom', 'Поломка (для вывода цен)'),
     ) );
 
     

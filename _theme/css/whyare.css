@@ -32,3 +32,13 @@
         width: 100%;
     }
 }
+
+@media (max-width: 480px) { 
+    .quality {
+        flex-direction: column;
+    }
+
+    .quality-text {
+        margin-left: 0;
+    }
+}

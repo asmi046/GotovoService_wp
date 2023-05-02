@@ -33,7 +33,7 @@
     "mk_part_js": "ssh grokip5l_asmi@grokip5l.beget.tech \"mkdir -p gotovoservice.com/public_html/wp-content/themes/g_service/js\"",
     "send_js": "scp -r js grokip5l_asmi@grokip5l.beget.tech:gotovoservice.com/public_html/wp-content/themes/g_service/",
     "mk_part_css": "ssh grokip5l_asmi@grokip5l.beget.tech \"mkdir -p gotovoservice.com/public_html/wp-content/themes/g_service/css\"",
-    "send_css": "scp -C -r css grokip5l_asmi@grokip5l.beget.tech:gotovoservice.com/public_html/wp-content/themes/g_service/",
+    "send_css": "scp -C -r _theme/css grokip5l_asmi@grokip5l.beget.tech:gotovoservice.com/public_html/wp-content/themes/g_service/",
     "mk_part_fonts": "ssh grokip5l_asmi@grokip5l.beget.tech \"mkdir -p gotovoservice.com/public_html/wp-content/themes/g_service/fonts\"",
     "send_fonts": "scp -C -r fonts grokip5l_asmi@grokip5l.beget.tech:gotovoservice.com/public_html/wp-content/themes/g_service/",
     "send_all": "scp -C -r _theme/* grokip5l_asmi@grokip5l.beget.tech:gotovoservice.com/public_html/wp-content/themes/g_service/",

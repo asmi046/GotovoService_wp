@@ -4,21 +4,30 @@
             <div class="education-doctrine d_flex jc_sb m_b_40 f_wrap">
                 <div class="education-box brad_12 gradient">
                     <div>
-                        <p class="education-info"><span><? echo carbon_get_post_meta(225, "teach_number_b1"); ?></span><? echo carbon_get_post_meta(225, "teach_title_b1"); ?></p>
+                        <div class="education-info">
+                            <span><? echo carbon_get_post_meta(225, "teach_number_b1"); ?></span>
+                            <div><? echo carbon_get_post_meta(225, "teach_title_b1"); ?></div>
+                        </div>
                     </div>
                     <? echo  apply_filters('the_content', carbon_get_post_meta(225, "teach_puncts_b1")); ?>
                 </div>
 
                 <div class="education-box brad_12 gradient">
                     <div>
-                        <p class="education-info"><span><? echo carbon_get_post_meta(225, "teach_number_b2"); ?></span><? echo carbon_get_post_meta(225, "teach_title_b2"); ?></p>
+                        <div class="education-info">
+                            <span><? echo carbon_get_post_meta(225, "teach_number_b2"); ?></span>
+                            <div><? echo carbon_get_post_meta(225, "teach_title_b2"); ?></div>
+                        </div>
                     </div>
                     <? echo  apply_filters('the_content', carbon_get_post_meta(225, "teach_puncts_b2")); ?>
                 </div>
 
                 <div class="education-box brad_12 gradient">
                     <div>
-                        <p class="education-info"><span><? echo carbon_get_post_meta(225, "teach_number_b3"); ?></span><? echo carbon_get_post_meta(225, "teach_title_b3"); ?></p>
+                        <div class="education-info">
+                            <span><? echo carbon_get_post_meta(225, "teach_number_b3"); ?></span>
+                            <div><? echo carbon_get_post_meta(225, "teach_title_b3"); ?></div>
+                        </div>
                     </div>
                     <? echo  apply_filters('the_content', carbon_get_post_meta(225, "teach_puncts_b3")); ?>
                 </div>

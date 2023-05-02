@@ -40,5 +40,17 @@ row-gap: 20px;
      .number-line span {
         margin-left: auto;
         display: inline-block;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 375px) { 
+    .cooperation-number {
+        flex:1;
+        margin-right: 20px;
+    }
+    
+    .cooperation-text {
+        flex:1
     }
 }

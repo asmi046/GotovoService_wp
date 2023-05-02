@@ -81,6 +81,12 @@ margin-bottom: 10px;
     text-align: center;
 }
 
+.breakdowns-in-cat .breakdowns-card{
+    flex:unset;
+    width: 23%;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 1024px) { 
     .breakdowns .services {
         column-gap: 13px;
@@ -98,5 +104,9 @@ margin-bottom: 10px;
 
     .breakdowns-card {
         margin-bottom: 20px;
+    }
+
+    .breakdowns-in-cat .breakdowns-card{ 
+        width: 100%;
     }
 }
