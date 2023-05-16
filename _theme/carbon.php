@@ -174,6 +174,14 @@ function crb_attach_theme_options() {
     ));
 
     
+    Container::make('post_meta', 'geo_and_metro_fild', 'Шапка станций метро и районов')
+    ->where('post_template', '=', 'page-geo.php')
+    ->or_where('post_template', '=', 'page-metro.php')
+    ->add_fields(array(
+        Field::make('text', 'bnr_price_ot', 'Цена от:'),
+        Field::make('text', 'bnr_btn_lnk', 'Ссылка для кнопки'),
+    ));
+
     Container::make('post_meta', 'geo_fild', 'Для района города')
     ->where('post_template', '=', 'page-geo.php')
     ->add_fields(array(

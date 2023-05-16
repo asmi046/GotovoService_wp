@@ -67,6 +67,45 @@
 }
 
 
+.page_head_big_geo ._container{
+    z-index: 20;
+    position: relative;
+}
+
+.page_head_big_geo {
+    
+    color: white;
+}
+
+
+.map_gradient {
+    background: linear-gradient(to right, #214578FF, #214578FF,  #21457800);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.map_img {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top:0;
+    height: 100%;
+    width: 50%;
+}
+
+.map_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+
 .banner_content h1{
     line-height: 1.2;
     margin-bottom: 20px;

@@ -659,6 +659,68 @@ textarea {
     display: block;
 }
 
+
+/* Блок брендов */
+
+.brand_element img{
+    margin: auto;
+    width: 80%;
+}
+
+.brand_element {
+    width:15%;
+    height: 90px;
+    border: 1px solid #214578;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    filter: grayscale(1);
+    min-width: 135px;
+}
+
+.brand_element:hover { 
+    filter: grayscale(0);
+}
+
+/* Блок брендов end*/
+
+/* Кнопка вверх  */
+
+.up_btn {
+    position: fixed;
+    width:60px;
+    height: 60px;
+    bottom: 30px;
+    right: 10px;
+    border: 2px solid #214578;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+    background-image: url(../img/icons/arrow.svg);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-180deg);
+    z-index: 999999;
+}
+
+.up_btn:hover {
+    background-color: #214578;
+    border: 2px solid white;
+    background-image: url(../img/icons/arrow-hover.svg);
+}
+
+.up_btn_hide{ display: none;}
+
+@media (max-width: 1024px) {
+    .up_btn {
+        bottom: 80px;
+    }
+}
+
+/* Кнопка вверх  end*/
+
+
 @media (max-width: 1024px) { 
 
     .contact_page ._container > div {

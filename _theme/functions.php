@@ -91,6 +91,8 @@ function my_assets()
 
 	// Подключение скриптов
 
+	wp_enqueue_script('upp_btn_js', get_template_directory_uri() . '/js/upp_btn.js', array(), $all_version, true);
+
 	wp_enqueue_script('fslightbox-js', get_template_directory_uri() . '/js/fslightbox.js', array(), $all_version, true);
 	wp_enqueue_script('imask-js', get_template_directory_uri() . '/js/imask.js', array(), $all_version, true);
 	wp_enqueue_script('sender-js', get_template_directory_uri() . '/js/sender.js', array(), $all_version, true);

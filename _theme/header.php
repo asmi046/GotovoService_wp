@@ -28,7 +28,7 @@
 ?>
 
     <body>
-
+        <div class="up_btn up_btn_hide" id="up_btn"></div>
 
         <?php get_template_part('template-parts/modal-win');?>
         <?php get_template_part('template-parts/city-select');?>

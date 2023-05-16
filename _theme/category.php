@@ -8,13 +8,9 @@
 <?php get_template_part('template-parts/reviews-in-main');?>
 <?php get_template_part('template-parts/video-review-in-main');?>
 <?php get_template_part('template-parts/why-are');?>
-<?php
-// Портфолио
-?>
+<?php get_template_part('template-parts/portfolio-in-cat');?>
 <?php get_template_part('template-parts/cooperation-in-main');?>
-<?php
-// Бренды
-?>
+<?php get_template_part('template-parts/brand-in-cat');?>
 
 <?php get_template_part('template-parts/questions-in-main');?>
 

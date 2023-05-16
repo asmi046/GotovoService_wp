@@ -28,11 +28,10 @@
 
 .application {
     padding-bottom: 60px;
-
     background-color: #FFFFFF;
-
     border-radius: 12px;
     overflow: hidden;
+    width:31%;
 }
 
 .application .img_wrapper{ 
