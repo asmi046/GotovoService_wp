@@ -7,7 +7,7 @@ Template Post Type: post
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/page-head');?>
+<?php get_template_part('template-parts/page-head-brand');?>
 
 <section class="all_page_content_section pad_50 text_blk">
     <div class="_container">

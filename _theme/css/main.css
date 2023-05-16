@@ -681,6 +681,16 @@ textarea {
 .brand_element:hover { 
     filter: grayscale(0);
 }
+.brand_banner_logo{
+    margin: auto 0 auto auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.banner_content .right .brand_banner_logo img{ 
+    margin: 0;
+    width: 100%;
+}
 
 /* Блок брендов end*/
 

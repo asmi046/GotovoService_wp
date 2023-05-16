@@ -17,7 +17,7 @@
                 while( $c_post->have_posts() ){
                     $c_post->the_post();
                 ?>
-                    <a href="" class="brand_element brad_12">
+                    <a href="<?the_permalink(); ?>" class="brand_element brad_12">
                         <img src="<?php echo wp_get_attachment_image_src(carbon_get_the_post_meta('page_head_img'), 'full')[0];?>" alt="<? the_title(); ?>">        
                     </a>
                 <?}
