@@ -4,7 +4,12 @@
 
         <div class=" d_flex m_b_40 f_wrap jc_sb services">
             <?php
-                $c_post = new WP_Query( ['cat' => get_cat_ID( single_cat_title('', 0) ),  
+                if (is_category())
+                    $true_cat_id = get_cat_ID( single_cat_title('', 0) );
+                else     
+                    $true_cat_id = get_the_category( $post->ID )[0]->term_id;
+            
+                $c_post = new WP_Query( ['cat' =>  $true_cat_id,  
                     'meta_query' => [
                         'relation' => 'OR',
                         [

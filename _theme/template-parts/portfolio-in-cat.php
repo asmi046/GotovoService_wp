@@ -3,7 +3,12 @@
         <h2 class="m_t_0">Портфолио</h2>
     
                 <?
-                        $c_post = new WP_Query( ['cat' => get_cat_ID( single_cat_title('', 0) ), 'posts_per_page' => 9, 
+                    if (is_category())
+                        $true_cat_id = get_cat_ID( single_cat_title('', 0) );
+                    else     
+                        $true_cat_id = get_the_category( $post->ID )[0]->term_id;
+
+                        $c_post = new WP_Query( ['cat' => $true_cat_id, 'posts_per_page' => 9, 
                         'meta_query' => [
                             'relation' => 'OR',
                             [
