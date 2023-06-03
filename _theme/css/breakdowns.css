@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.breakdowns-card:hover {
+    text-decoration: none;
+}
+
 .breakdowns-card {
     flex: 1;
     border: 1px solid grey;

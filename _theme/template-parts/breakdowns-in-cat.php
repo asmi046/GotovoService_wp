@@ -16,16 +16,15 @@
 
                 while( $c_post->have_posts() ){
                     $c_post->the_post();
-                ?>
-                            <div class="breakdowns-card brad_12 ">
-                                <p class="breakdowns-title white_color gradient"><? the_title(); ?></p>
-                                <div class="breakdowns-text white_bg">
-                                <p class="breakdowns-sign">Признак: <? echo carbon_get_the_post_meta('polomka_priznak')?></p>
-                                <p class="breakdowns-cause">Причина: <?echo carbon_get_the_post_meta('polomka_pr')?></p>
-                                <p class="breakdowns-price">Цена: от <?echo carbon_get_the_post_meta('polomka_price')?> Р</p>
-                                </div>
-                            </div>
-                <?}
+                    
+                    get_template_part("template-parts/polomka-card", null, [
+                        'title' => get_the_title(),
+                        'priznak' => carbon_get_the_post_meta('polomka_priznak'),
+                        'prihina' => carbon_get_the_post_meta('polomka_pr'),
+                        'price' => carbon_get_the_post_meta('polomka_price'),
+                        'lnk' => get_the_permalink()
+                    ]);
+                }
                     
                     wp_reset_postdata();
                 ?>

@@ -171,6 +171,9 @@ function crb_attach_theme_options() {
                 'Бренды' => 'Бренды',
                 
             ) )->set_width(50),
+
+            Field::make('text', 'prices_category_in_page', 'Категория цен')->set_width(50),
+            Field::make('text', 'prices_polom_in_page', 'Поломка (для вывода цен)')->set_width(50),
     ));
 
     
