@@ -753,6 +753,120 @@ textarea {
 
 /* Страница контактов end */
 
+/* Форма вызова мастера */
+
+.green_line p{
+    padding: 1.5em 0;
+    width: 70%;
+    line-height: 1;
+}
+
+.form_to_home {
+    display:  flex;
+    margin-bottom: 40px;
+}
+
+.form_to_home  .left{
+    margin-right: 20px;
+}
+
+.form_to_home  .right{
+    margin-left: 20px;
+}
+
+.form_to_home > div{
+    flex: 1;     
+}
+
+.form_to_home p{
+    font-size: 14px;
+    color:#a5a5a5;
+    margin: 5px 0;
+}
+
+.form_to_home p.summery{
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.form_to_home input{
+    border: 1px solid #21457815; 
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #21457815;
+}
+
+.form_to_home .radiogroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.form_to_home .radiogroup label {
+    
+    margin-bottom: 20px;
+    width:30%;
+    text-align: center;
+}
+
+.form_to_home .radiogroup label input:checked ~ span { 
+    background-color: #214578;
+    color: white;
+}
+
+.form_to_home .radiogroup label span { 
+    background: #21457815;
+    border: 1px solid #21457815; 
+    border-radius: 5px;
+    width:100%;
+    height: 100%;
+    padding: 5px 15px;
+    display: block;
+}
+
+.form_to_home .radiogroup label input{
+    display: none;
+}
+
+.green_line {
+    background-color: #4dbe7b;
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.green_line ._container{ 
+    background-image: url(../img/icons/list.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 240px;
+}
+
+@media (max-width: 768px) { 
+    .form_to_home {
+        flex-direction: column;
+    }
+
+    .form_to_home  .left{
+        margin-right: 0;
+    }
+    
+    .form_to_home  .right{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .green_line ._container {
+        background-size: 300px;
+        background-position: 115px 12px;
+    }
+}
+
+/* Форма вызова мастера end */
+
 @media (max-width: 512px) {
     .q_form {
         flex-wrap: wrap;
